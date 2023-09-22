@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bezier curve</title>
+</head>
+<body>
+<canvas id="cvs" width="1000px" height="700px">
+</canvas>
+<script>
+    var cvs = document.getElementById("cvs");
+    var ctx = cvs.getContext("2d");
+
+    function paint(){
+        ctx.beginPath();
+        ctx.moveTo(500, 200);
+        ctx.bezierCurveTo(400, 50, 250, 200, 500, 400);
+
+        //ctx.quadraticCurveTo(480, 350, 500, 500);
+
+        //ctx.quadraticCurveTo(520, 350, 600, 300);
+
+
+        ctx.bezierCurveTo(750, 200, 600, 50, 500, 200);
+        ctx.fillStyle = "#ff0000";
+        ctx.fill();
+        ctx.closePath();
+
+    }
+    paint();
+</script>
+</body>
+</html>

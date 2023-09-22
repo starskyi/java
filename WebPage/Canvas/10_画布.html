@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>画布</title>
+    <style>
+        canvas{
+            border:1px solid;
+            background:#ffffff;
+        }
+        button:hover{
+            background:#000000;
+            color:#ffffff;
+        }
+        .active{
+            background:#000000;
+            color:#ffffff;
+        }
+
+    </style>
+</head>
+<body>
+<canvas id="cvs" width="800px" height="600px"></canvas>
+<hr>
+<button type="button" id="boldBtn" >粗线条</button>
+<button type="button" id="thinBtn">细线条</button>
+<button type="button" id="saveBtn">保存标签</button>
+<input type="color" id="color" value=""/>
+<button type="button" id="clearBtn">橡皮擦</button>
+<button type="button" id="nullBtn">清空画布</button>
+<script>
+    var cvs = document.getElementById("cvs");
+    var ctx = cvs.getContext("2d");
+    var cw = cvs.clientWidth;
+    var ch = cvs.clientHeight;
+
+    var boldBtn = document.getElementById("boldBtn");
+    var thinBtn = document.getElementById("thinBtn");
+    var saveBtn = document.getElementById("saveBtn");
+    var color = document.getElementById("color");
+    var clearBtn = document.getElementById("clearBtn");
+    var nullBtn = document.getElementById("nullBtn");
+
+
+    var flag = false;
+    var starx = 0;
+    var stary = 0;
+    cvs.onmousedown = function(e){
+        starx = e.pageX;
+        stary = e.pageY;
+        ctx.moveTo(starx, stary);
+        flag = true;
+        ctx.beginPath();
+    }
+    cvs.onmouseleave = function(){
+        flag = false;
+        ctx.closePath();
+    }
+    cvs.onmouseup = function(){
+        flag = false;
+    }
+    cvs.onmousemove = function(e){
+        if(flag){
+            var x = e.pageX;
+            var y = e.pageY;
+
+            ctx.lineTo(x, y);
+            ctx.stroke();
+
+        }
+    }
+
+    boldBtn.onclick = function(){
+        ctx.globalCompositeOperation = "source-over";
+        ctx.lineWidth = 5;
+        boldBtn.classList.add("active");
+        thinBtn.classList.remove("active");
+        clearBtn.classList.remove("active");
+    }
+    thinBtn.onclick = function(){
+        ctx.globalCompositeOperation = "source-over";
+        ctx.lineWidth = 1;
+        thinBtn.classList.add("active");
+        boldBtn.classList.remove("active");
+        clearBtn.classList.remove("active");
+    }
+
+    clearBtn.onclick = function(){
+        ctx.globalCompositeOperation = "destination-out";
+        ctx.lineWidth = 30;
+        clearBtn.classList.add("active");
+        boldBtn.classList.remove("active");
+        thinBtn.classList.remove("active");
+    }
+
+    saveBtn.onclick = function(){
+        var url = cvs.toDataURL();
+
+        var downloadA = document.createElement("a");
+        downloadA.setAttribute("download", "炫酷标签");
+        downloadA.href = url;
+        downloadA.click();
+    }
+
+    color.onchange = function(){
+        ctx.strokeStyle = color.value;
+    }
+
+    nullBtn.onclick = function(){
+        ctx.clearRect(0, 0, cw, ch);
+    }
+</script>
+</body>
+</html>

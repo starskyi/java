@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="bookDao" class="com.star.dao.impl.BookDaoImpl">
+        <property name="age" value="18"/>
+        <property name="name" value="zhangsan"/>
+    </bean>
+
+
+    <bean id="userDao" class="com.star.dao.impl.UserDaoImpl"/>
+
+<!--    <bean id="bookService" class="com.star.service.impl.BookServiceImpl">-->
+<!--        <property name="bookDao" ref="bookDao"/>-->
+<!--        <property name="userDao" ref="userDao"/>-->
+<!--    </bean>-->
+
+    <!-- 自动注入 -->
+    <bean id="bookService" class="com.star.service.impl.BookServiceImpl" autowire="byType" />
+</beans>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>gradient</title>
+</head>
+<body>
+    <canvas id="cvs" width="800px" height="600px">
+
+    </canvas>
+<script>
+    var cvs = document.getElementById("cvs");
+    var ctx = cvs.getContext("2d");
+    //线性渐变
+    /*
+    var linearGradient = ctx.createLinearGradient(0, 0, 800, 600);
+    linearGradient.addColorStop(0, "#ff0000");
+    linearGradient.addColorStop(0.5, "#ffcccc");
+    linearGradient.addColorStop(1, "#0000ff");
+    ctx.fillStyle = linearGradient;
+    ctx.fillRect(0, 0, 800, 600);
+
+     */
+
+    //径向渐变
+
+    var radialGradient = ctx.createRadialGradient(300, 200, 20, 400, 300, 200);
+    radialGradient.addColorStop(0, "#ffcccc");
+    //radialGradient.addColorStop(0.5, "#0000ff");
+    radialGradient.addColorStop(1, "#ff0000");
+
+    ctx.fillStyle = radialGradient;
+    ctx.arc(400, 300, 200, 0, 2*Math.PI);
+    ctx.fill();
+
+
+
+
+    //圆锥渐变
+
+</script>
+</body>
+</html>

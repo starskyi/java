@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>smil face</title>
+    <style>
+        body{
+            width:100%;
+            height:850px;
+        }
+    </style>
+</head>
+<body>
+<canvas id="cvs">
+
+</canvas>
+<script>
+    var cvs = document.getElementById("cvs");
+    var ctx = cvs.getContext("2d");
+    var cw = cvs.width = document.body.clientWidth;
+    var ch = cvs.height = document.body.clientHeight;
+    var radius = 200;
+
+    function paint(){
+        ctx.arc(cw/2, ch/2, radius, 0, 2*Math.PI);
+        ctx.stroke();
+
+        ctx.moveTo(cw/2 + radius - 90, ch/2 + 20);
+        ctx.arc(cw/2, ch/2 + 20, radius - 90, 0, Math.PI);
+        ctx.stroke();
+
+        ctx.moveTo(cw/2 -radius/2 + 10, ch/2 - radius/2);
+        ctx.arc(cw/2 - radius/2, ch/2 - radius/2, 20,0, 2*Math.PI);
+        ctx.stroke();
+
+        ctx.moveTo(cw/2 + radius/2 + 10, ch/2 - radius/2);
+        ctx.arc(cw/2 + radius/2, ch/2 - radius/2, 20, 0, 2*Math.PI);
+        ctx.stroke();
+    }
+    paint();
+</script>
+</body>
+</html>

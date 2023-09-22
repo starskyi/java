@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3d54fdad-be37-4b54-9bbf-762ae14abb95" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/DynamicPage/Shop/img/1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DynamicPage/Shop/img/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DynamicPage/Shop/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DynamicPage/Shop/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TDYJ/git" beforeDir="false" afterPath="$PROJECT_DIR$/../TDYJ/git" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2OtsgFCbryOEEqO3CcZhM4HBjnX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TDYJ2/Test" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\code\java\WebPage\DynamicPage\Shop" />
+      <recent name="D:\code\java\WebPage\DynamicPage\Shop\img" />
+      <recent name="D:\code\java\WebPage\DynamicPage\Canvas\img" />
+      <recent name="D:\code\java\WebPage\DynamicPage\Canvas" />
+      <recent name="D:\code\java\WebPage\DynamicPage\WWW\img" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="circle.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebPage/DynamicPage/WWW/circle.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="WebPage" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="WebPage" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.circle.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3d54fdad-be37-4b54-9bbf-762ae14abb95" name="Changes" comment="" />
+      <created>1682391330349</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1682391330349</updated>
+      <workItem from="1682391331512" duration="1890000" />
+      <workItem from="1682400879311" duration="2813000" />
+      <workItem from="1682410942210" duration="596000" />
+      <workItem from="1682413696615" duration="10529000" />
+      <workItem from="1682434496606" duration="143000" />
+      <workItem from="1682483531608" duration="12401000" />
+      <workItem from="1682571573084" duration="6567000" />
+      <workItem from="1682578228976" duration="12122000" />
+      <workItem from="1682655824121" duration="1241000" />
+      <workItem from="1682768998479" duration="3496000" />
+      <workItem from="1682925009206" duration="13770000" />
+      <workItem from="1683006408380" duration="2947000" />
+      <workItem from="1683020304907" duration="61000" />
+      <workItem from="1683023862185" duration="5282000" />
+      <workItem from="1683099123376" duration="18235000" />
+      <workItem from="1683459118161" duration="615000" />
+      <workItem from="1683461785369" duration="1226000" />
+      <workItem from="1683471635271" duration="332000" />
+      <workItem from="1683609224993" duration="888000" />
+      <workItem from="1687165776998" duration="13472000" />
+      <workItem from="1688526329612" duration="87000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

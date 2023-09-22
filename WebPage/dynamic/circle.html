@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>fireworks</title>
+    <style>
+        body{
+            width:100%;
+            height:900px;
+            padding:0;
+            margin:0;
+            overflow:hidden;
+            background:#000000;
+        }
+
+    </style>
+</head>
+
+<body>
+<div id="div"></div>
+<canvas id="cvs"></canvas>
+<script>
+    var cvs = document.getElementById("cvs");
+    var ctx = cvs.getContext("2d");
+    var cw = cvs.width = document.body.clientWidth;
+    var ch = cvs.height = document.body.clientHeight;
+    var a = 500;
+    var b = 50;
+    var x = -500;
+    var y = 0;
+    var flag = true;
+    var ox = cw/2;
+    var oy = ch/2;
+    var rx = 0;
+    var ry = 0;
+    var step = 10;
+    var size = 100;
+    var count = 0;
+    var rel_size_step = size/(2*a/step);
+    var rel_size = 50;
+    function paint() {
+        ctx.clearRect(0, 0, cw, ch);
+        if (x >= -500 && x <= 0) {
+            rel_size += rel_size_step;
+        } else {
+            rel_size -= rel_size_step;
+        }
+
+        count++;
+        if (x >= 500) {
+            flag = false;
+            x = 500;
+        }
+        if (x < -500) {
+            x = -500;
+            flag = true;
+        }
+
+        rx = ox + x;
+        ry = oy - y;
+        ctx.fillStyle = "#ff0000";
+        ctx.fillRect(rx, ry, rel_size, rel_size);
+
+        if(!flag){
+            x -= step;
+            y = Math.sqrt((1 - (x*x)/(a*a))*b*b);
+        }else{
+            x += step;
+            y = -Math.sqrt((1 - (x*x)/(a*a))*b*b);
+        }
+        requestAnimationFrame(paint);
+    }
+    paint();
+    //painting();
+</script>
+</body>
+</html>

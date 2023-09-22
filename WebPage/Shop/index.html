@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>万物捞</title>
+    <style>
+        li:hover{
+            background: aqua;
+        }
+        body{
+            height: 100%;
+            width: 100%;
+            background-size: cover;
+            position: absolute;
+        }
+        div{
+            text-align: center;
+        }
+        .search-div{
+            padding-top:20px;
+            background: #70a1ff;
+            height: 40px;
+        }
+
+        .search-input{
+            height: 20px;
+            width:400px;
+        }
+
+        .nav-ul, .nav-ul li{
+            display: inline;
+            font-size:30px;
+        }
+        .nav-ul li{
+            margin: 10px;
+        }
+
+        .nav-ul a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .nav-div{
+            background: #e55039;
+        }
+        .title{
+            float: right;
+            width: 200px;
+            height: 150px;
+            margin-top: 20px;
+        }
+        .price{
+            float: right;
+            width: 200px;
+            height: 100px;
+            margin-top: -60px;
+            color:red;
+            font-size: 30px;
+        }
+        .commodity{
+            padding-top: 30px;
+            float: left;
+            width:30%;
+            height:250px;
+            margin: 20px;
+            background: #34e7e4;
+        }
+        .commodity:hover{
+            background: #00d8d6;
+        }
+        .kind{
+            float: left;
+            width: 100%;
+            height: 100%;
+            display: none;
+        }
+
+        a{
+            text-decoration: none;
+            color:black;
+        }
+        #phone{
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+<div>
+    <div class="search-div">
+        <label>
+            <input type="text" placeholder="请输入商品名称" class="search-input">
+        </label>
+        <button type="button" >搜索</button>
+        <a href="login.html" style="margin-left:300px;">登录</a>
+        <a href="#" >注册</a>
+    </div>
+    <hr>
+
+    <div class="nav-div">
+        <ul class="nav-ul">
+            <li><a href="JavaScript:show('phone');">手机</a></li>
+            <li><a href="JavaScript:show('computer');">电脑</a></li>
+            <li><a href="JavaScript:show('maleWear');">男装</a></li>
+            <li><a href="JavaScript:show('femaleWear');">女装</a></li>
+        </ul>
+    </div>
+
+    <div class="kind" id="phone">
+        <a href="#">
+        <div class="commodity">
+            <img src="goods/2.jpg"/>
+            <span class="title">OPPO K10x 极光 8GB+128GB 67W超级闪充 5000mAh长续航 120Hz高帧屏 6400万三摄 高通骁龙695 拍照 5G </span>
+            <span class="price">1299&nbsp;&yen</span>
+        </div>
+        </a>
+
+        <a href="#">
+        <div class="commodity">
+            <img src="goods/3.jpg"/>
+            <span class="title">Redmi K60 骁龙8+处理器 2K高光屏 6400万超清相机 5500mAh长续航 16GB+256GB 墨羽 小米红米5G</span>
+            <span class="price">2299&nbsp;&yen</span>
+        </div>
+        </a>
+
+        <a href="#">
+        <div class="commodity">
+            <img src="goods/4.jpg"/>
+            <span class="title">Redmi Note 11 5G 天玑810 33W Pro快充 5000mAh大电池 6GB +128GB 神秘黑境 智能 小米 红米</span>
+            <span class="price">899&nbsp;&yen</span>
+        </div>
+        </a>
+
+        <a href="#">
+        <div class="commodity">
+            <img src="goods/5.jpg"/>
+            <span class="title">OPPO 一加 Ace 2 16GB+256GB 冰河蓝 满血版骁龙?8+旗舰平台 1.5K灵犀触控屏 超帧超画引擎 5G游戏电竞</span>
+            <span class="price">3099&nbsp;&yen</span>
+        </div>
+        </a>
+
+        <a href="#">
+        <div class="commodity">
+            <img src="goods/6.jpg"/>
+            <span class="title">荣耀80 1.6亿像素超清主摄 AI Vlog视频大师 全新Magic OS 7.0系统 5G手机 8GB+256GB 墨玉青</span>
+            <span class="price">2098&nbsp;&yen</span>
+        </div>
+        </a>
+
+        <a href="#">
+            <div class="commodity">
+                <img src="goods/7.jpg"/>
+                <span class="title">三星 SAMSUNG 心系天下 W23 非凡陶瓷 尊奢铰链 瑰丽边框 16GB+512GB 5G折叠 熠金黑 附S Pen</span>
+                <span class="price">14999&nbsp;&yen</span>
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="commodity">
+                <img src="goods/8.jpg"/>
+                <span class="title">OPPO K9x 8GB+128GB 银紫超梦 天玑810 5000mAh长续航 33W快充 90Hz电竞屏 6400万三摄 拍照5Goppok9x</span>
+                <span class="price">1199&nbsp;&yen</span>
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="commodity">
+                <img src="goods/9.jpg"/>
+                <span class="title">vivo iQOO Neo8 12GB+256GB 夜岩 第一代骁龙8+ 自研芯片V1+ 120W超快闪充 144Hz高刷 5G游戏电竞性能</span>
+                <span class="price">2299&nbsp;&yen</span>
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="commodity">
+                <img src="goods/10.jpg"/>
+                <span class="title">Apple iPhone 14 Pro (A2892) 256GB 暗紫色 支持移动联通电信5G 双卡双待手机</span>
+                <span class="price">6488&nbsp;&yen</span>
+            </div>
+        </a>
+    </div>
+
+    <div class="kind" id="computer">
+        <a href="#">
+            <div class="commodity">
+                <img src="goods/31.jpg"/>
+                <span class="title">Apple MacBook Air 13.3 八核M1芯片(7核图形处理器) 8G 256G SSD 深空灰 笔记本 MGN63CH/A</span>
+                <span class="price">7999&nbsp;&yen</span>
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="commodity">
+                <img src="goods/32.jpg"/>
+                <span class="title">京品电脑华为笔记本电脑MateBook D 14 SE版 14英寸 英特尔酷睿 i5 8G+512G 轻薄本/高清护眼防眩光屏/手机互联 银</span>
+                <span class="price">3099&nbsp;&yen</span>
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="commodity">
+                <img src="goods/33.jpg"/>
+                <span class="title">联想笔记本电脑小新14轻薄本 英特尔酷睿i5 14英寸超薄本(高性能标压i5 16G 512G)灰 商务办公学生</span>
+                <span class="price">3599&nbsp;&yen</span>
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="commodity">
+                <img src="goods/34.jpg"/>
+                <span class="title">机械革命（MECHREVO）极光Pro 15.6英寸游戏本 笔记本电脑(i7-12650H 16G 512G RTX4060 165HZ 2.5K屏)</span>
+                <span class="price">3099&nbsp;&yen</span>
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="commodity">
+                <img src="goods/35.jpg"/>
+                <span class="title">京品电脑戴尔（DELL）游匣G15 15.6英寸游戏本 笔记本电脑(14核i7 16G 512G RTX3060 165Hz高色域电竞屏)黑</span>
+                <span class="price">5499&nbsp;&yen</span>
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="commodity">
+                <img src="goods/36.jpg"/>
+                <span class="title">ThinkPad联想ThinkBook 14+ 2023款 13代酷睿i5英特尔Evo平台 14英寸标压轻薄笔记本i5-13500H 16G 512G 2.8K 90Hz</span>
+                <span class="price">4999&nbsp;&yen</span>
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="commodity">
+                <img src="goods/37.jpg"/>
+                <span class="title">华为MateStation S 商务台式机电脑整机 小机箱 i5 16G 1T SSD WIN11 远程开机 超级终端 Wi-Fi 6 23.8英寸</span>
+                <span class="price">4198&nbsp;&yen</span>
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="commodity">
+                <img src="goods/38.jpg"/>
+                <span class="title">京品电脑荣耀MagicBook 14 锐龙版 14英寸6核锐龙R5轻薄笔记本电脑 16G大内存 512G 冰河银 多屏协同 高色域</span>
+                <span class="price">2588&nbsp;&yen</span>
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="commodity">
+                <img src="goods/39.jpg"/>
+                <span class="title">惠普(HP)战66 六代2023酷睿15.6英寸(英特尔13代i5-1340P 16G 1T 2.5K高色域屏120HZ)高性能轻薄本笔记本</span>
+                <span class="price">4499&nbsp;&yen</span>
+            </div>
+        </a>
+    </div>
+
+    <div class="kind" id="maleWear">
+        <a href="#">
+            <div class="commodity">
+                <img src="goods/61.jpg"/>
+                <span class="title">NOSOYO奢侈高端品牌男装高档冰丝衬衫男士夏大码条纹衬衣翻领半袖体恤衫 深蓝绿 2XL</span>
+                <span class="price">2399&nbsp;&yen</span>
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="commodity">
+                <img src="goods/62.jpg"/>
+                <span class="title">HLA海澜之家短袖T恤男23许魏洲/范可新同款圆领短袖男</span>
+                <span class="price">78&nbsp;&yen</span>
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="commodity">
+                <img src="goods/63.jpg"/>
+                <span class="title">雾卡【纯棉3件】短袖t恤男衣服圆领宽松潮印花青年大码新品夏季休闲 小鹿角铁灰+EXP卡其+大R黑 XL建议135-150斤</span>
+                <span class="price">79&nbsp;&yen</span>
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="commodity">
+                <img src="goods/64.jpg"/>
+                <span class="title">京东京造【抗菌系列】5A抑菌抗发黄T恤男40S新疆棉t恤男夏短袖打底T深灰L</span>
+                <span class="price">39.9&nbsp;&yen</span>
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="commodity">
+                <img src="goods/65.jpg"/>
+                <span class="title">海澜之家（HLA）短袖T恤男女情侣装23新款panda wowo熊猫凉感t恤圆领短袖男夏季 【凉感抗菌】漂白7D 175/92A/L 推荐69~75kg</span>
+                <span class="price">78&nbsp;&yen</span>
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="commodity">
+                <img src="goods/66.jpg"/>
+                <span class="title">GLM森马集团品牌短袖T恤男夏季美式潮流全棉上衣男生帅气宽松半截袖</span>
+                <span class="price">42&nbsp;&yen</span>
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="commodity">
+                <img src="goods/67.jpg"/>
+                <span class="title">NOSOYO奢侈高端品牌男装高档桑蚕丝短袖衬衫男士真丝衬衣商务休闲打底衫 黑色 170/L</span>
+                <span class="price">4699&nbsp;&yen</span>
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="commodity">
+                <img src="goods/68.jpg"/>
+                <span class="title">卡帝乐鳄鱼（CARTELO）短袖男士夏季休闲短袖t恤男翻领POLO打底衫商务 米杏色 XL</span>
+                <span class="price">139&nbsp;&yen</span>
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="commodity">
+                <img src="goods/69.jpg"/>
+                <span class="title">HLA海澜之家短袖T恤男夏新疆棉微弹圆领数码印花t恤男</span>
+                <span class="price">88&nbsp;&yen</span>
+            </div>
+        </a>
+    </div>
+
+    <div class="kind" id="femaleWear">
+        <a href="#">
+            <div class="commodity">
+                <img src="goods/91.jpg"/>
+                <span class="title">TOMMY HILFIGER女装休闲纯棉透气镂空灯笼袖半开襟宽松衬衫WW0WW34120 白色YCF 40 (XL)</span>
+                <span class="price">545&nbsp;&yen</span>
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="commodity">
+                <img src="goods/92.jpg"/>
+                <span class="title">La Chapelle拉夏贝尔连衣裙女装2023夏季新时尚中长款显瘦A字裙女 白色 均码</span>
+                <span class="price">169&nbsp;&yen</span>
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="commodity">
+                <img src="goods/93.jpg"/>
+                <span class="title">古地斯（GuDiSi）短袖棉麻连衣裙女两件套显瘦休闲套装裙子GDS2079 黑色+卡其色 M</span>
+                <span class="price">359&nbsp;&yen</span>
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="commodity">
+                <img src="goods/94.jpg"/>
+                <span class="title">爱心东东卡吉蘭娜（Kajilanna）新款连衣裙2023夏季女装收腰显瘦纱裙法式温柔风气质套装裙子夏天 杏色上衣+咖色裙子 M 建议体重99-108斤</span>
+                <span class="price">79.9&nbsp;&yen</span>
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="commodity">
+                <img src="goods/95.jpg"/>
+                <span class="title">La Chapelle拉夏贝尔休闲裤女2023新夏季款阔腿裤两件套装 蓝色+杏色 M</span>
+                <span class="price">259&nbsp;&yen</span>
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="commodity">
+                <img src="goods/96.jpg"/>
+                <span class="title">妍莉芬（yanlifen）连衣裙女装2023年夏季新款韩版气质套装中长款吊带裙法式裙子夏天 白色上衣+吊带裙 M(建议95-110斤)</span>
+                <span class="price">168&nbsp;&yen</span>
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="commodity">
+                <img src="goods/97.jpg"/>
+                <span class="title">NERDY2023夏季新款情侣T恤网球系列潮牌小Logo基础款短袖宽松休闲女 黑色 M</span>
+                <span class="price">269&nbsp;&yen</span>
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="commodity">
+                <img src="goods/98.jpg"/>
+                <span class="title">红蜻蜓 t恤女短袖2023年夏季新款女装修身打底格子百搭女士上衣服衫 粉杏 均码（适合80-130斤）</span>
+                <span class="price">89&nbsp;&yen</span>
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="commodity">
+                <img src="goods/99.jpg"/>
+                <span class="title">森马（Semir）连衣裙女文艺复古方领2023夏季清新温柔肌理碎花长裙109323114003</span>
+                <span class="price">219.99&nbsp;&yen</span>
+            </div>
+        </a>
+    </div>
+
+
+
+</div>
+
+<script>
+    function show(id){
+        var divs = document.getElementsByClassName("kind");
+        for(var i = 0; i < divs.length; i++){
+            divs[i].style.display = "none";
+        }
+        var div = document.getElementById(id);
+        div.style.display = "block";
+    }
+</script>
+</body>
+</html>

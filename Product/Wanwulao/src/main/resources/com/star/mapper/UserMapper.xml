@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.star.mapper.UserMapper">
+
+<!--    <select id="findAll" resultType="com.star.domain.User">-->
+<!--        select * from user-->
+<!--    </select>-->
+    <insert id="add">
+        insert into tb_user
+        values(#{username}, #{password}, #{name}, #{telephone}, #{isMerchant}, #{sex}, #{address}, 0.0);
+    </insert>
+
+    <update id="update" useGeneratedKeys="true" keyProperty="id">
+        update tb_user
+        <set>
+            <if test="username != null">
+                username = #{username},
+            </if>
+            <if test="password != null">
+                password = #{password},
+            </if>
+            <if test="name != null">
+                name = #{name},
+            </if>
+            <if test="telephone != null">
+                telephone = #{telephone},
+            </if>
+            <if test="isMerchant != null">
+                isMerchant = #{isMerchant},
+            </if>
+            <if test="sex != null">
+                sex = #{sex},
+            </if>
+            <if test="address != null">
+                address = #{address},
+            </if>
+            <if test="money != null">
+                money = #{money},
+            </if>
+        </set>
+        <where>
+            id = #{id}
+        </where>
+    </update>
+</mapper>

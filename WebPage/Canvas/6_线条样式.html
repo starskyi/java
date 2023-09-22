@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>线条样式</title>
+</head>
+<body>
+<canvas id="cvs" width="600px" height="400px">
+
+</canvas>
+<script>
+    var cvs = document.getElementById("cvs");
+    var ctx = cvs.getContext("2d");
+
+    function paint1(){
+        ctx.lineWidth = 40;
+
+        ctx.moveTo(300, 200);
+        ctx.lineTo(400, 300);
+        ctx.lineTo(500, 200);
+        ctx.stroke();
+    }
+    var index = 0;
+    function paint2(){
+        ctx.clearRect(0, 0, 600, 400);
+        index++;
+        if(index == 40){
+            index = 0;
+        }
+        ctx.lineWidth = 1;
+
+        ctx.moveTo(300, 200);
+        ctx.lineTo(400, 300);
+        ctx.lineTo(500, 200);
+
+        ctx.setLineDash([20, 20]);
+        ctx.lineDashOffset = index;
+        ctx.stroke();
+        requestAnimationFrame(paint2);
+    }
+
+    paint2();
+</script>
+</body>
+</html>

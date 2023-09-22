@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<!--
+    namespace : 名称空间
+-->
+<mapper namespace="com.star.mapper.BrandMapper">
+    <!-- 映射列名与属性名对应 -->
+    <resultMap id="brandResultMap" type="com.star.domain.Brand">
+        <result column="brand_name" property="brandName"/>
+        <result column="company_name" property="companyName"/>
+    </resultMap>
+
+    <select id="findAll" resultMap="brandResultMap">
+        select * from tb_brand
+    </select>
+
+    <!-- 动态sql查询 -->
+    <select id="selectByCondition" resultMap="brandResultMap">
+        select * from tb_brand
+        <where>
+            <if test="brandName != null and brandName != ''">
+                and brand_name = #{brandName}
+            </if>
+            <if test="companyName != null and brandName != ''">
+                and company_name like #{companyName}
+            </if>
+
+        </where>
+    </select>
+</mapper>

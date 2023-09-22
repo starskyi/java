@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>fun</title>
+
+    <script>
+        function sum(){
+            var sum = 0;
+            var i;
+            for(i = 0; i < arguments.length; i++){
+                alert(arguments[i]);
+                sum += arguments[i];
+            }
+            return sum;
+        }
+
+        var s = sum(1,2,3,4);
+        alert("sum = " + s);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

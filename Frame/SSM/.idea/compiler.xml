@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Spring02_beanInstance" />
+        <module name="Spring09_annotation_third_bean_manager" />
+        <module name="Spring07_annotation_bean" />
+        <module name="Spring06_datasource" />
+        <module name="Spring03_beanLifecycle" />
+        <module name="Spring04_dlSet" />
+        <module name="Spring01_baseConfig" />
+        <module name="Spring08_annotation_dl" />
+        <module name="Spring05_dlCollection" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Spring01_baseConfig" target="1.5" />
+      <module name="Spring02_beanInstance" target="1.5" />
+      <module name="Spring03_beanLifecycle" target="8" />
+      <module name="Spring04_dlSet" target="8" />
+      <module name="Spring05_dlCollection" target="8" />
+      <module name="Spring06_datasource" target="8" />
+      <module name="Spring07_annotation_bean" target="8" />
+      <module name="Spring08_annotation_dl" target="8" />
+      <module name="Spring09_annotation_third_bean_manager" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

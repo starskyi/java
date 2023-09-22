@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>codeRain</title>
+    <style>
+        html{
+            width:100%;
+            height:800px;
+        }
+        body{
+            width:100%;
+            height:800px;
+            background:#000000;
+            padding:0;
+            margin:0;
+            overflow:hidden;
+        }
+    </style>
+</head>
+<body>
+<canvas id="cvs"></canvas>
+<script>
+
+    var cvs =  document.getElementById("cvs");
+    var requestAnimationFrame = window.requestAnimationFrame ||
+        window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame ||
+        window.msRequestAnimationFrame;
+    var ctx =  cvs.getContext("2d");
+    var cw = cvs.width = document.body.clientWidth;
+    var ch = cvs.height = document.body.clientHeight;
+    var cols = parseInt(cw/15);
+    var rainArr = [];
+    var step = "26";
+    var speed;
+
+    ctx.font = "bold 26px microsoft yahei";
+
+    function getRain(){
+        //循环一次，获得一列
+        for(var i = 0; i < cols; i++){
+            var col = [];
+
+            //每一列的速度
+            speed = parseInt(Math.random()*10 + 3);
+
+            var rx = parseInt(Math.random()*cw);
+            var ry = parseInt(Math.random()*300);
+            var color = Math.round(Math.random()*255);
+            for(var j = 0; j < parseInt(ch/step)/2; j++){
+                var code = {
+                    x : rx,
+                    y : -j*step - ry ,
+                    speed : speed,
+                    color : "rgb(0," + color + ",0)",
+                    text : ["1", "0"][Math.round(Math.random())]
+                }
+
+                col.push(code);
+            }
+            rainArr.push(col);
+        }
+    }
+
+    function raining(){
+        ctx.clearRect(0, 0, cw, ch);
+
+
+        for(var i = 0; i < rainArr.length; i++){
+            var col = rainArr[i];
+            for(var j = 0; j < col.length; j++){
+                var code = col[j];
+
+                if(code.y > ch){
+                    code.y = 0;
+                }else{
+                    code.y += code.speed;
+                }
+
+
+                ctx.fillStyle = code.color;
+                ctx.fillText(code.text, code.x, code.y);
+
+            }
+        }
+        requestAnimationFrame(raining);
+    }
+
+    getRain();
+    raining();
+</script>
+</body>
+</html>

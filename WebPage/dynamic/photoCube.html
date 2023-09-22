@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>photoCube</title>
+
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            box-sizing:border-box;
+        }
+        img{
+            width:300px;
+            height:300px;
+        }
+        body{
+            width:100%;
+            height:100vh;
+            background:radial-gradient(#ffffff, #21b7cb);
+            justify-content:center;
+            align-items:center;
+            display:flex;
+        }
+        .container{
+            width:300px;
+            height:300px;
+            position:relative;
+            transform-style:preserve-3d;
+            transform:rotateX(-25deg) rotateY(25deg);
+            animation:rotate 10s linear infinite alternate;
+
+
+        }
+        #move{
+            width:300px;
+            height:300px;
+            position:relative;
+            transform-style:preserve-3d;
+            animation:move 5s linear infinite;
+        }
+
+        @keyframes move{
+            25%{
+                transform:scale(50%) translate3d(1000px, -170px, 0);
+            }
+            50%{
+                transform:scale(25%) translate3d(0, -340px, 0);
+            }
+            75%{
+                transform:scale(50%) translate3d(-1000px, -170px, 0);
+            }
+            100%{
+                transform:scale(100%) translate3d(0, 0, 0);
+            }
+
+        }
+        .container .item{
+            position:absolute;
+            width:100%;
+            height:100%;
+            opacity:0.7;
+        }
+        .container .front{
+            transform:translateZ(150px);
+        }
+        .container .back{
+            transform:rotateY(180deg)translateZ(150px);
+        }
+        .container .left{
+            transform:rotateY(90deg) translateZ(150px);
+        }
+        .container .right{
+            transform:rotateY(-90deg) translateZ(150px);
+        }
+        .container .top{
+            transform:rotateX(90deg) translateZ(150px);
+        }
+        .container .bottom{
+            transform:rotateX(-90deg) translateZ(150px);
+        }
+        @keyframes rotate{
+            20%{
+                transform:rotateY(90deg);
+            }
+            40%{
+                transform:rotateY(180deg);
+            }
+            60%{
+                transform:rotateY(270deg);
+            }
+            80%{
+                transform:rotateX(-90deg);
+            }
+            100%{
+                transform:rotateX(90deg);
+            }
+
+        }
+    </style>
+</head>
+
+
+<body>
+<div id="move">
+    <div class="container" onclick="alternate()" id="cube">
+        <div class="item front"><img src="img/9.jpg" width="100%" alt=""></div>
+        <div class="item back"><img src="img/10.jpg" width="100%" alt=""></div>
+        <div class="item left"><img src="img/11.jpg" width="100%" alt=""></div>
+        <div class="item right"><img src="img/12.jpg" width="100%" alt=""></div>
+        <div class="item top"><img src="img/13.jpg" width="100%" alt=""></div>
+        <div class="item bottom"><img src="img/14.jpg" width="100%" alt=""></div>
+    </div>
+</div>
+    <script>
+        var cube = document.getElementById("cube");
+        var move = document.getElementById("move");
+        var st = window.getComputedStyle(cube, null);
+        var st2 = window.getComputedStyle(move, null);
+        var flag = true;
+        function alternate(){
+            var status = st.getPropertyValue("transform");
+            var status2 = st2.getPropertyValue("transform");
+            if(flag){
+                cube.style.animationName = "none";
+                move.style.animationName = "none";
+                cube.style.transform = status;
+                move.style.transform = status2;
+                flag = false;
+            }else{
+                cube.style.animationName = "rotate";
+                move.style.animationName = "move";
+                flag = true;
+            }
+
+
+        }
+    </script>
+</body>
+</html>

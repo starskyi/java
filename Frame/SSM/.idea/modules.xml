@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Spring01_baseConfig/Spring01_baseConfig.iml" filepath="$PROJECT_DIR$/Spring01_baseConfig/Spring01_baseConfig.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring02_beanInstance/Spring02_beanInstance.iml" filepath="$PROJECT_DIR$/Spring02_beanInstance/Spring02_beanInstance.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring03_beanLifecycle/Spring03_beanLifecycle.iml" filepath="$PROJECT_DIR$/Spring03_beanLifecycle/Spring03_beanLifecycle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring04_dlSet/Spring04_dlSet.iml" filepath="$PROJECT_DIR$/Spring04_dlSet/Spring04_dlSet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring05_dlCollection/Spring05_dlCollection.iml" filepath="$PROJECT_DIR$/Spring05_dlCollection/Spring05_dlCollection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring06_datasource/Spring06_datasource.iml" filepath="$PROJECT_DIR$/Spring06_datasource/Spring06_datasource.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring07_annotation_bean/Spring07_annotation_bean.iml" filepath="$PROJECT_DIR$/Spring07_annotation_bean/Spring07_annotation_bean.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring08_annotation_dl/Spring08_annotation_dl.iml" filepath="$PROJECT_DIR$/Spring08_annotation_dl/Spring08_annotation_dl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring09_annotation_third_bean_manager/Spring09_annotation_third_bean_manager.iml" filepath="$PROJECT_DIR$/Spring09_annotation_third_bean_manager/Spring09_annotation_third_bean_manager.iml" />
+    </modules>
+  </component>
+</project>

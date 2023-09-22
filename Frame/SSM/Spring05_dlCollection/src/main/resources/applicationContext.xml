@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="bookDao" class="com.star.dao.impl.BookDaoImpl">
+        <property name="array">
+            <array>
+                <value>100</value>
+                <value>200</value>
+                <value>300</value>
+            </array>
+        </property>
+        <property name="set">
+            <set>
+                <value>100</value>
+                <value>200</value>
+                <value>300</value>
+            </set>
+        </property>
+        <property name="list">
+            <list>
+                <value>100</value>
+                <value>200</value>
+                <value>300</value>
+            </list>
+        </property>
+        <property name="map">
+            <map>
+                <entry key="name" value="zhangsan" />
+                <entry key="age" value="18" />
+                <entry key="sex" value="male" />
+            </map>
+        </property>
+        <property name="properties">
+            <props>
+                <prop key="name">lisi</prop>
+                <prop key="age">20</prop>
+                <prop key="sex">female</prop>
+            </props>
+        </property>
+    </bean>
+
+</beans>

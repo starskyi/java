@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/Spring01/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring02/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring03/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring01_baseConfig/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring02_beanInstance/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring03_beanLifecycle/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring04_dlSet/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring05_dlCollection/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring_06_datasource/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring07_annotation_bean/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring06_datasource/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring08_annotation_dl/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring09_annotation_third_bean_manager/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

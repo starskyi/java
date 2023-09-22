@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>刮刮卡</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+        }
+        div{
+            width:600px;
+            height:400px;
+            font-size:30px;
+            font-weight:900;
+            overflow:hidden;
+            left:0;
+            top:0;
+            position:absolute;
+            text-align:center;
+            line-height:400px;
+
+        }
+        canvas{
+            top:0;
+            left:0;
+            position:absolute;
+            z-index:1;
+        }
+    </style>
+</head>
+<body>
+<div id="text">
+    谢谢惠顾
+</div>
+<canvas id="cvs" width="600px" height="400px"></canvas>
+<script>
+    var text = document.getElementById("text");
+    var cvs = document.getElementById("cvs");
+    var ctx = cvs.getContext("2d");
+
+    if(Math.random() < 0.1){
+        text.innerText = "恭喜你中了一台IPhone18";
+    }
+    var img = new Image();
+    img.src = "img/guagua.jpg";
+    img.onload = function(){
+        ctx.drawImage(img, 0, 0, 600, 400);
+    }
+
+    var flag = false;
+    cvs.onmousedown = function(){
+        flag = true;
+    }
+    cvs.onmouseup = function(){
+        flag = false;
+    }
+    cvs.onmousemove = function(e){
+        if(flag){
+            ctx.beginPath();
+            var x = e.pageX;
+            var y = e.pageY;
+            ctx.globalCompositeOperation = "destination-out";
+            ctx.arc(x, y, 20, 0, Math.PI*2);
+            ctx.fill();
+            ctx.closePath();
+
+        }
+    }
+
+</script>
+</body>
+</html>

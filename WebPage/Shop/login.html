@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购物网</title>
+    <style>
+        body{
+            background: url("img/1.jpeg") no-repeat;
+            height: 100%;
+            width: 100%;
+            background-size: cover;
+            position: absolute;
+
+        }
+        .tit-div{
+            width: 300px;
+            height: 100px;
+        }
+        .login-box {
+            width: 360px;
+            height: 450px;
+            position: absolute;
+            top: 50px;
+            right:170px;
+            background: #ffffff;
+            text-align: center;
+        }
+        .login_inner {
+            overflow: hidden;
+            padding: 30px 20px;
+            width:250px;
+            height:200px;
+            background: #ffa502;
+        }
+        .btn-div{
+            height:30px;
+            padding:5px;
+            text-align:center;
+            background:#ff0000;
+            color:#ffffff;
+            margin-top:-2px;
+        }
+        div{
+            text-align: center;
+        }
+        #username{
+            width:160px;
+            height:20px;
+        }
+        #password{
+            width:160px;
+            height:20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="login-box">
+    <div class="tit-div"><h2 style="margin:10px;"><i>欢迎来到万物捞购物网</i></h2></div>
+
+    <div class="login_inner">
+        <form action="#" method="post" id="form">
+            <div class="name" style="margin-top:0;">
+                <label style="float:left" for="username">用户名：</label>
+                <div style="float:left;margin-top:2px;margin-left:10px;">
+                    <input type="text" name="username" id="username" placeholder="请输入用户名">
+                </div>
+            </div></br></br></br>
+            <div>
+                <label style="float:left" for="password">密&nbsp;&nbsp;&nbsp;码：</label>
+                <div style="float:left;margin-top:2px;margin-left:10px;">
+                    <input type="password" name="password" id="password" placeholder="请输入密码">
+                </div>
+            </div></br></br></br>
+            <div>
+                <a href="index.html">
+                    <div class="btn-div">
+                        登录
+                    </div>
+                </a>
+            </div>
+
+        </form>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>像素操作</title>
+
+</head>
+<body>
+<canvas id="cvs" width="640px" height="1100px"></canvas>
+<script>
+    var cvs = document.getElementById("cvs");
+    var ctx = cvs.getContext("2d");
+
+    var img = new Image();
+    img.src = "img/3.jpeg";
+    img.onload = function(){
+        ctx.drawImage(img, 0, 0, 640, 1100);
+        let imageData = ctx.getImageData(0, 0, 640, 1100);
+        /*
+        for(var i = 0; i < imageData.data.length; i += 4){
+            let avg = (imageData.data[i] + imageData.data[i + 1] + imageData.data[i + 2])/3;
+            imageData.data[i] = avg;
+            imageData.data[i + 1] = avg;
+            imageData.data[i + 2] = avg;
+            imageData.data[i + 3] = 255;
+        }
+
+         */
+
+        for(var i = 0; i < imageData.data.length; i += 4){
+
+            imageData.data[i] = 255 - imageData.data[i];
+            imageData.data[i + 1] = 255 - imageData.data[i + 1];
+            imageData.data[i + 2] = 255 - imageData.data[i + 2];
+            imageData.data[i + 3] = 255;
+        }
+
+        ctx.putImageData(imageData, 0, 0, 0, 0, 640, 1100);
+
+    }
+
+
+
+</script>
+</body>
+</html>
