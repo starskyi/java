@@ -16,6 +16,9 @@
         <option value="$PROJECT_DIR$/Spring06_datasource/pom.xml" />
         <option value="$PROJECT_DIR$/Spring08_annotation_dl/pom.xml" />
         <option value="$PROJECT_DIR$/Spring09_annotation_third_bean_manager/pom.xml" />
+        <option value="$PROJECT_DIR$/Sptring10_mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/Sptring11_aop/pom.xml" />
+        <option value="$PROJECT_DIR$/Sptring12_transfer/pom.xml" />
       </list>
     </option>
   </component>

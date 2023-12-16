@@ -23,18 +23,10 @@ public class BaseServlet extends HttpServlet {
         String methodName = uri.substring(uri.lastIndexOf("/") + 1);
 
         try {
-
-            try {
-                this.getClass().getMethod(methodName,
-                        HttpServletRequest.class, HttpServletResponse.class
-                ).invoke(this, req, resp);
-            } catch(IllegalAccessException e) {
-                e.printStackTrace();
-            } catch(InvocationTargetException e) {
-                e.printStackTrace();
-            }
-
-        } catch(NoSuchMethodException e) {
+            this.getClass().getMethod(methodName,
+                    HttpServletRequest.class, HttpServletResponse.class
+            ).invoke(this, req, resp);
+        } catch(Exception e) {
             e.printStackTrace();
         }
     }

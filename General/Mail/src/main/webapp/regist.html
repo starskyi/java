@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>regist</title>
+    <style>
+        a{
+            text-decoration:none;
+            color:red;
+        }
+        .rootDiv{
+            padding-top:4%;
+        }
+        body{
+            background-color: #e4e4e4;
+        }
+        *{margin:10px;}
+        div{text-align: center;}
+        p{color:red;}
+        .center{
+            width:30%;
+            height:50vh;
+            background-color: #ffffff;
+            margin:auto;
+            padding-top:6%;
+        }
+        input{
+            height:3vh;
+            margin:3%;
+        }
+        #loginBtn{
+            width:65%;
+            height:4vh;
+        }
+        .btnDiv{
+            margin-top:6%;
+        }
+        .bottomBtn{
+            margin-top:10%;
+        }
+    </style>
+</head>
+<body>
+<div class="rootDiv">
+    <div class="center">
+        <form action="#" method="post" >
+            <div><p></p></div>
+            <div>用户:<input type="text" name="username" id="username" placeholder="请输入用户名"/></div>
+            <div>密码:<input type="password" name="password" id="password" placeholder="请输入密码"/></div>
+            <div class="btnDiv"><input type="button" value="注册" onclick="show()" id="loginBtn"/></div>
+            <div class="bottomBtn"><a href="#">忘记密码</a><a href="regist.html">返回登录</a></div>
+        </form>
+    </div>
+</div>
+
+    <script>
+        var p = document.getElementsByTagName("p")[0];
+        var xmlHttp;
+        if(window.XMLHttpRequest){
+            xmlHttp = new XMLHttpRequest;
+        }else{
+            xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        function show(){
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            var formData = "username=" + username + "&password=" + password;
+            xmlHttp.open("POST","user/regist", true);
+            xmlHttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+            xmlHttp.send(formData);
+            xmlHttp.onreadystatechange = function(){
+                if(xmlHttp.readyState === 4 && xmlHttp.status === 200){
+                    var success = xmlHttp.responseText
+                    if(success === "1"){
+                        alert("注册成功，请登录")
+                        window.location = "login.html";
+                    }else{
+                        p.innerHTML = xmlHttp.responseText;
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>

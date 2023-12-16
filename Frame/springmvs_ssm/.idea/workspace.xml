@@ -1,7 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="54b03b32-49ff-4661-9a29-85b0365152e5" name="Changes" comment="" />
+    <list default="true" id="54b03b32-49ff-4661-9a29-85b0365152e5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../General/Demo/Demo1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../General/Mial.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../General/Mial/Mial.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../General/Script/Script1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WebPage/Canvas/.idea/Canvas.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WebPage/Demo/Demo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyBatis/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MyBatis/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyBatis/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MyBatis/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyBatis/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MyBatis/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyBatis/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_38.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MyBatis/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_38.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyBatis/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MyBatis/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyBatis/.idea/libraries/Maven__org_mybatis_mybatis_3_4_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MyBatis/.idea/libraries/Maven__org_mybatis_mybatis_3_4_6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyBatis/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_26.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MyBatis/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_26.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyBatis/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MyBatis/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SSM/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SSM/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SSM/.idea/libraries/Maven__c3p0_c3p0_0_9_1_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SSM/.idea/libraries/Maven__c3p0_c3p0_0_9_1_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SSM/.idea/libraries/Maven__com_alibaba_druid_1_1_10.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SSM/.idea/libraries/Maven__com_alibaba_druid_1_1_10.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SSM/.idea/libraries/Maven__com_alibaba_druid_1_1_16.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SSM/.idea/libraries/Maven__com_alibaba_druid_1_1_16.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SSM/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_38.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SSM/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_38.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SSM/.idea/libraries/Maven__org_springframework_spring_aop_5_2_10_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SSM/.idea/libraries/Maven__org_springframework_spring_aop_5_2_10_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SSM/.idea/libraries/Maven__org_springframework_spring_beans_5_2_10_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SSM/.idea/libraries/Maven__org_springframework_spring_beans_5_2_10_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SSM/.idea/libraries/Maven__org_springframework_spring_context_5_2_10_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SSM/.idea/libraries/Maven__org_springframework_spring_context_5_2_10_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SSM/.idea/libraries/Maven__org_springframework_spring_core_5_2_10_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SSM/.idea/libraries/Maven__org_springframework_spring_core_5_2_10_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SSM/.idea/libraries/Maven__org_springframework_spring_expression_5_2_10_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SSM/.idea/libraries/Maven__org_springframework_spring_expression_5_2_10_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SSM/.idea/libraries/Maven__org_springframework_spring_jcl_5_2_10_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SSM/.idea/libraries/Maven__org_springframework_spring_jcl_5_2_10_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SSM/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SSM/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SSM/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SSM/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SSM/Spring09_annotation_third_bean_manager/src/main/java/com/star/config/JdbcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SSM/Spring09_annotation_third_bean_manager/src/main/java/com/star/config/JdbcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SSM/Spring09_annotation_third_bean_manager/src/main/resources/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../SSM/Spring09_annotation_third_bean_manager/src/main/resources/jdbc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../General/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../General/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Product/Wanwulao/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Product/Wanwulao/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Product/Wanwulao/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Product/Wanwulao/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Product/Wanwulao/src/main/java/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Product/Wanwulao/src/main/java/com/star/ui/MainInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Product/Wanwulao/src/main/java/com/star/ui/MainInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Product/travel/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Product/travel/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Product/travel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Product/travel/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Product/travel/src/main/java/cn/itcast/travel/web/servlet/BaseServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Product/travel/src/main/java/cn/itcast/travel/web/servlet/BaseServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WebPage/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../WebPage/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WebPage/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../WebPage/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WebPage/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../WebPage/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -9,6 +55,18 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../../Develop/Maven/apache-maven-3.6.1" />
+        <option name="useMavenConfig" value="true" />
+        <option name="userSettingsFile" value="D:\Develop\Maven\apache-maven-3.6.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProjectId" id="2VmSMfv4zeH5eli6rqM15DhVY9f" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -20,7 +78,11 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ssm/pom.xml" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -31,6 +93,7 @@
       <option name="presentableId" value="Default" />
       <updated>1695439716482</updated>
       <workItem from="1695439717904" duration="9000" />
+      <workItem from="1702301747741" duration="282000" />
     </task>
     <servers />
   </component>

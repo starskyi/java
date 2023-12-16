@@ -10,7 +10,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ca93ccd-5b3c-4b96-bb1e-aba397614052" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../General/Demo/Demo1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../General/JSP/JSP.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../General/Mial.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../General/Mial/Mial.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../General/Script/Script1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WebPage/Canvas/.idea/Canvas.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WebPage/Demo/Demo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../General/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../General/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wanwulao/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Wanwulao/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wanwulao/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Wanwulao/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wanwulao/src/main/java/com/star/ui/MainInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Wanwulao/src/main/java/com/star/ui/MainInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/itcast/travel/web/servlet/BaseServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/itcast/travel/web/servlet/BaseServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WebPage/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../WebPage/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WebPage/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../WebPage/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WebPage/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../WebPage/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,8 +64,9 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../General" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -162,10 +179,30 @@
       <workItem from="1695372803205" duration="5236000" />
       <workItem from="1695386495330" duration="168000" />
       <workItem from="1695386705308" duration="180000" />
+      <workItem from="1695439697589" duration="634000" />
+      <workItem from="1697528401714" duration="43000" />
+      <workItem from="1700748143367" duration="1162000" />
+      <workItem from="1701659726199" duration="404000" />
+      <workItem from="1701764949100" duration="126000" />
+      <workItem from="1701766190561" duration="1588000" />
+      <workItem from="1701782485648" duration="504000" />
+      <workItem from="1701851144694" duration="494000" />
+      <workItem from="1701851911591" duration="12000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

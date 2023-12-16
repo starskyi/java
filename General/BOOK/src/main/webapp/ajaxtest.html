@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>hello world</p>
+    <button onclick="show()">打印</button>
+    
+    <script>
+        var p = document.getElementsByTagName("p")[0];
+        var xmlHttp;
+        if(window.XMLHttpRequest){
+            xmlHttp = new XMLHttpRequest;
+        }else{
+            xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        function show(){
+            xmlHttp.open("GET","index.jsp", true)
+            xmlHttp.send();
+        }
+        xmlHttp.onreadystatechange = function(){
+            if(xmlHttp.readyState === 4 && xmlHttp.status === 200){
+                p.innerHTML = xmlHttp.responseText;
+            }
+        }
+    </script>
+</body>
+</html>

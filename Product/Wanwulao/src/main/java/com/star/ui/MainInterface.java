@@ -1,9 +1,7 @@
 package com.star.ui;
 
 import com.star.component.*;
-import com.star.dao.AdminDao;
 import com.star.dao.CommodityDao;
-import com.star.dao.UserDao;
 import com.star.domain.User;
 import com.star.utils.ImageIoUtil;
 import com.star.utils.ScreenUtil;
@@ -40,8 +38,10 @@ public class MainInterface {
     CommodityDao commodityDao = new CommodityDao();
 
 
-    int width = 2000;
-    int height = 1200;
+    //int width = 2000;
+    //int height = 1200;
+    int width = ScreenUtil.getScreenWidth() * 4 / 5;
+    int height = ScreenUtil.getScreenHeight() * 4 / 5;
 
     JLabel selected;
 

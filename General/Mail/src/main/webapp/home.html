@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .sendMail{
+            margin-left:28%;
+            margin-top:20px;
+            display: none;
+        }
+        th{
+            background-color: #e4e4e4;
+        }
+        body{
+            overflow: hidden;
+        }
+        .rootDiv{
+            background-color: #ffffff;
+            height:99vh;
+            width:99%;
+        }
+        .left button{
+            width:100%;
+            height:5%;
+        }
+        .left{
+            float:left;
+            text-align:center;
+            width:25%;
+            height:97vh;
+            background-color: #ffffff;
+            border:1px solid;
+            border-right:3px solid;
+            padding-top:5%;
+        }
+        .right{
+            padding-top:30px;
+            height:97vh;
+            width:70%;
+            background-color: #ffffff;
+            overflow:auto;
+            display: none;
+        }
+        table{
+            width:100%;
+            text-align: center;
+            border-collapse: collapse;
+        }
+        table td{
+            width:30%;
+        }
+        tr{
+            border:1px solid;
+            width:100%;
+            height:30px;
+            background-color: #ffffff;
+        }
+        tr:hover{
+            background-color: #505e79;
+        }
+        
+        td:first-child{
+            width:10%;
+        }
+        textarea{
+            width:60%;
+            height:40vh;
+            margin-top: 20px;
+        }
+        .header{
+            background-color: #505e79;
+            border-top-left-radius: 5px;
+            padding:10px;
+        }
+        .rightAlign{
+            margin-right:10px;
+            margin-top: 20px;
+            text-align: right;
+            width:100px;
+            height:20px;
+            display: inline-block;
+        }
+        .wInput{
+            width:60%;
+            height:5vh;
+        }
+        #ctxSpan{
+            float: left;
+        }
+        .showMail{
+            margin-top:20px;
+            margin-left:28%;
+            white-space: normal;
+            word-break: break-all;
+            overflow: hidden;
+            display: none;
+        }
+        .mailHead{
+            margin-top:10px;
+            border:1px solid;
+            padding-left:10px;
+            background-color: #eff5fb;
+        }
+        .backHome{
+            text-align: center;
+        }
+        #contextR{
+            margin-top:30px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="header">
+            <p id="username"></p>
+            <a href="javascript:backHome()">首页</a> | <a href="user/exit">退出登录</a>
+        </div>
+        <div class="rootDiv">
+            <div class="left">
+                <button type="button" onclick="getMails('receivename','发件人')">收信箱</button><br>
+                <button type="button" onclick="sendMailPage()">发信箱</button><br>
+                <button type="button" onclick="getMails('sendName','收件人')">已发送</button><br>
+            </div>
+            <div class="right">
+                <div><button type="button" onclick="del()">删除</button></div>
+                <div>
+                    <table>
+                        <thead>
+
+                        </thead> 
+                        <tr ondblclick="showDetail()">
+                        </tr> 
+                    </table>
+                </div>
+            </div>
+            <div class="sendMail">
+                <div ><button type="button" onclick="sendMail()">发送</button></div>
+                <div><span class="rightAlign">收件人</span><input type="text" class="wInput" id="receivename"></div>
+                <div><span class="rightAlign">主题</span><input type="text" class="wInput" id="theme"></div>
+                <div><span class="rightAlign" id="ctxSpan">内容</span><textarea id="context"></textarea></div>
+            </div>
+            <div class="showMail">
+                <div><button onclick="back()">返回</button></div>
+                <div class="mailHead">
+                    <h3 id="themeR">Hello world</h3>
+                    <p >发件人：<span id="sendnameR"></span></p>
+                    <p >收件人：<span id="receivenameR"></span></p>
+                    <p >时间：<span id="dateR"></span></p>
+                </div>
+                <div id="contextR">
+
+                </div>
+            </div>
+            <div class="backHome">
+                <h1>welcome!</h1>
+                <h2 id="homeUsername"></h2>
+                <h3 style="color:red;"><span id="count">0</span>封未读</h3>
+            </div>
+        </div>
+    </div>
+   
+    <script>
+
+        backHome();
+        function showMail(str,mails){
+            var rightDiv = document.getElementsByClassName("right")[0];
+            var html = "<div style='margin:10px;'><button type='button' onclick=\"del('" + str + "')\">删除</button></div>"
+            html += "<table>";
+            html += "<thead>\
+                <th><input type='checkbox' id='boxAll' onclick='selecAll()'></th>\
+                <th>" + str + "</th><th>主题</th><th>时间</th></thead>"  
+            var hideHtml = "";
+            for(var i = 0; i < mails.length; i++){
+                html += "<tr ondblclick='showDetail(" + mails[i].id + ")'>\
+                    <td><input type='checkBox' class='checkBox' value='" + mails[i].id + "'></td>\
+                    <td>" + (str === '发件人' ? mails[i].sendname : mails[i].receivename) + "</td>\
+                    <td>" + mails[i].theme + "</td>\
+                    <td>" + mails[i].date + "</td></tr>";
+                hideHtml += "<input type='hidden' value='" + mails[i].id + "' class='id'>"
+            }
+            html += "</table>";
+            html += "<div>" + hideHtml + "</div>";
+            rightDiv.innerHTML = html;
+            setShow(rightDiv);
+        }
+        
+       
+
+        function sendMailPage(){
+            var sendDiv = document.getElementsByClassName("sendMail")[0];
+            setShow(sendDiv);
+        }
+
+        function selecAll(){
+            var boxAll = document.getElementById("boxAll");
+            var boxs = document.getElementsByClassName("checkBox");
+            for(var i = 0; i < boxs.length; i++){
+                boxs[i].checked = boxAll.checked;
+            }
+        }
+
+        function del(str){
+            //var inputIds = document.getElementsByClassName("id");
+            var inputIds = document.getElementsByClassName("checkBox");
+            var sids = "";
+            for(var i = 0; i < inputIds.length; i++){
+                if(inputIds[i].checked === true){
+                    sids += "id=" + inputIds[i].value + "&";
+                }
+            }
+            sids = sids.substring(0, sids.length - 1);
+             request("mail/delMails", sids, "POST", function(data){
+                 alert(data);
+                 var fieldName = "";
+                 fieldName = (str === "收件人" ? "sendName" : "receivename");
+                 getMails(fieldName, str);
+             });
+        }
+
+
+        function showDetail(id){
+            var sendname = document.getElementById("sendnameR");
+            var receivename = document.getElementById("receivenameR");
+            var theme = document.getElementById("themeR");
+            var date = document.getElementById("dateR");
+            var context = document.getElementById("contextR");
+            var mail;
+            request("mail/getMail", "id=" + id, "POST", function(data){
+                var mail = JSON.parse(data)[0];
+                if(mail != null){
+                    sendname.innerText = mail.sendname;
+                    receivename.innerText = mail.receivename;
+                    theme.innerText = mail.theme;
+                    date.innerText = mail.date;
+                    context.innerText = mail.context;
+                }
+
+                var mailDiv = document.getElementsByClassName("showMail")[0];
+                setShow(mailDiv);
+            });
+        }
+
+        function back(){
+            var right = document.getElementsByClassName("right")[0];
+            setShow(right);
+        }
+
+        function backHome(){
+            var count = document.getElementById("count");
+            var username = document.getElementById("username");
+            var homeUsername = document.getElementById("homeUsername");
+            request("mail/getCount", "", "GET", function(data){
+                count.innerText = data;
+            });
+            request("user/getUser", "", "GET", function(data){
+                username.innerText = data;
+                homeUsername.innerText = data;
+            });
+
+            var home = document.getElementsByClassName("backHome")[0];
+            setShow(home);
+        }
+
+        function sendMail(){
+            var sendname = document.getElementById("username").innerText;
+            var receivename = document.getElementById("receivename").value;
+            var theme = document.getElementById("theme").value;
+            var context = document.getElementById("context").value;
+            var formData = "sendname=" + sendname + "&receivename=" + receivename
+                + "&theme=" + theme + "&context=" + context;
+            request("mail/sendMail", formData, "POST", function(data){
+                if(data === "1"){
+                    alert("添加成功");
+                    getMails("sendname", "收件人");
+                }else{
+                    alert("添加失败");
+                }
+            });
+        }
+
+        function getMails(name, str){
+            var sendData = "fieldName=" + name;
+            request("mail/getMails",sendData, "GET", function(data){
+                var data = JSON.parse(data);
+                if(data.flag === "error"){
+                    var rightDiv = document.getElementsByClassName("right")[0];
+                    rightDiv.innerHTML = data.info;
+                    setShow(rightDiv);
+                }else{
+                    showMail(str,data);
+                }
+            });
+        }
+
+        function setShow(obj){
+            document.getElementsByClassName("right")[0].style.display = "none";
+            document.getElementsByClassName("showMail")[0].style.display = "none";
+            document.getElementsByClassName("sendMail")[0].style.display = "none";
+            document.getElementsByClassName("backHome")[0].style.display = "none";
+            obj.style.display = "block";
+        }
+
+        function request(url, data, method, func){
+            var xmlHttp;
+            if(window.XMLHttpRequest){
+                xmlHttp = new XMLHttpRequest;
+            }else{
+                xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            if(method === "POST"){
+                xmlHttp.open(method, url, true);
+                xmlHttp.setRequestHeader("Content-type","application/x-www-form-urlencoded;charset=utf-8");
+                xmlHttp.send(data);
+            }else{
+                xmlHttp.open(method, url + "?" + data, true);
+                xmlHttp.setRequestHeader("Content-type","application/x-www-form-urlencoded;charset=utf-8");
+                xmlHttp.send();
+            }
+
+            xmlHttp.onreadystatechange=function(){
+                if (xmlHttp.readyState==4 && xmlHttp.status==200)
+                {
+                    func(xmlHttp.responseText);
+                }
+            }
+        }
+    </script>
+</body>
+</html>

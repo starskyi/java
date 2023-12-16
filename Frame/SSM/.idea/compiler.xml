@@ -6,20 +6,29 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Spring02_beanInstance" />
-        <module name="Spring09_annotation_third_bean_manager" />
         <module name="Spring07_annotation_bean" />
-        <module name="Spring06_datasource" />
+        <module name="Sptring12_transfer" />
+        <module name="Sptring10_mybatis" />
         <module name="Spring03_beanLifecycle" />
         <module name="Spring04_dlSet" />
         <module name="Spring01_baseConfig" />
         <module name="Spring08_annotation_dl" />
         <module name="Spring05_dlCollection" />
+        <module name="Spring03" />
+        <module name="Spring02_beanInstance" />
+        <module name="Spring02" />
+        <module name="Spring09_annotation_third_bean_manager" />
+        <module name="Sptring11_aop" />
+        <module name="Spring01" />
+        <module name="Spring06_datasource" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="Spring01" target="1.5" />
       <module name="Spring01_baseConfig" target="1.5" />
+      <module name="Spring02" target="1.5" />
       <module name="Spring02_beanInstance" target="1.5" />
+      <module name="Spring03" target="8" />
       <module name="Spring03_beanLifecycle" target="8" />
       <module name="Spring04_dlSet" target="8" />
       <module name="Spring05_dlCollection" target="8" />
@@ -27,6 +36,9 @@
       <module name="Spring07_annotation_bean" target="8" />
       <module name="Spring08_annotation_dl" target="8" />
       <module name="Spring09_annotation_third_bean_manager" target="8" />
+      <module name="Sptring10_mybatis" target="8" />
+      <module name="Sptring11_aop" target="8" />
+      <module name="Sptring12_transfer" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>
