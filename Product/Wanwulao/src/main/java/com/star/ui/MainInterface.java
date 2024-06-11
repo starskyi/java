@@ -40,8 +40,8 @@ public class MainInterface {
 
     //int width = 2000;
     //int height = 1200;
-    int width = ScreenUtil.getScreenWidth() * 4 / 5;
-    int height = ScreenUtil.getScreenHeight() * 4 / 5;
+    int width = ScreenUtil.getScreenWidth() * 8 / 9;
+    int height = ScreenUtil.getScreenHeight() * 8 / 9;
 
     JLabel selected;
 
@@ -101,7 +101,7 @@ public class MainInterface {
         searchBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                HomeUI homeUi = new HomeUI(commodityDao.selectByTitle("%" + input.getText() + "%"));
+                HomeUI homeUi = new HomeUI(commodityDao.selectByTitle("%" + input.getText() + "%"), 0);
                 updateUI(homeUi);
             }
         });
@@ -210,6 +210,40 @@ public class MainInterface {
             public void mouseClicked(MouseEvent e) {
                 Component component = e.getComponent();
                 JLabel label = (JLabel) e.getComponent();
+
+
+                //展示对应页面
+                if(component == home){
+                    //首页
+                    HomeUI homeUi = new HomeUI(commodityDao.findAll(0), 0);
+                    updateUI(homeUi);
+
+                }else if(component == recommend){
+                    //推荐
+                    HomeUI recommendUi = new HomeUI(commodityDao.selectByCount(0), 0);
+                    updateUI(recommendUi);
+
+                }else if(component == classify){
+                    //分类
+                    ClassifyUI classifyUI = new ClassifyUI(commodityDao.selectByKind(1, 0));
+                    updateUI(classifyUI);
+
+                }else if(component == message){
+                    //信息
+                    JOptionPane.showMessageDialog(jf, "暂无消息");
+                    return;
+                }else{
+                    //我的
+                    if(user != null){
+                        MyUI myUI = new MyUI(user);
+                        updateUI(myUI);
+                    }else{
+                        JOptionPane.showMessageDialog(jf, "您还没登录，请登录");
+                        new LoginUI();
+                        return;
+                    }
+
+                }
                 selected = label;
                 home.setBackground(null);
                 recommend.setBackground(null);
@@ -218,36 +252,6 @@ public class MainInterface {
                 my.setBackground(null);
                 label.setOpaque(true);
                 label.setBackground(new Color(60, 64, 198));
-
-                //展示对应页面
-                if(component == home){
-                    //首页
-                    HomeUI homeUi = new HomeUI(commodityDao.findAll());
-                    updateUI(homeUi);
-
-                }else if(component == recommend){
-                    //推荐
-                    HomeUI recommendUi = new HomeUI(commodityDao.selectByCount());
-                    updateUI(recommendUi);
-
-                }else if(component == classify){
-                    //分类
-                    ClassifyUI classifyUI = new ClassifyUI(commodityDao.selectByKind(1));
-                    updateUI(classifyUI);
-
-                }else if(component == message){
-                    //信息
-                    JOptionPane.showMessageDialog(jf, "暂无消息");
-                }else{
-                    //我的
-                    if(user != null){
-                        MyUI myUI = new MyUI(user);
-                        updateUI(myUI);
-                    }else{
-                        JOptionPane.showMessageDialog(jf, "您还没登录，请登录");
-                    }
-
-                }
             }
             @Override
             public void mouseEntered(MouseEvent e) {
@@ -274,7 +278,7 @@ public class MainInterface {
         //设置按钮监听器
         ActionListener setListener = new ActionListener() {
             public void actionPerformed(ActionEvent e){
-                setMenu.show(jf, 130, 1000);
+                setMenu.show(jf, 130, height/8*7);
             }
         };
 
@@ -282,17 +286,16 @@ public class MainInterface {
         final MouseListener loginLitener = new MouseAdapter() {
             @Override
             public void mousePressed(MouseEvent e) {
-                if(login.getText().equals("登录")){
 
+                if(login.getText().equals("登录")){
                     new LoginUI();
                     login.setText("退出登录");
-                    login.repaint();
                 }else{
                     user = null;
                     username.setText("用户：无");
                     login.setText("登录");
-                    login.repaint();
                 }
+                login.repaint();
 
             }
         };
@@ -309,7 +312,7 @@ public class MainInterface {
 
 
         scrollBox = Box.createHorizontalBox();
-        scrollBox.add(new HomeUI(commodityDao.findAll()));
+        scrollBox.add(new HomeUI(commodityDao.findAll(0), 0));
 
 
         bigBox = Box.createVerticalBox();
@@ -342,19 +345,12 @@ public class MainInterface {
         ActionListener listener = new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
-                if(user == null){
-                    JOptionPane.showMessageDialog(jf, "请登录");
-                }else{
                     if(e.getActionCommand().equals("用户管理")){
-
                         new AdminLoginUI(userManage);
                     }else{
                         new AdminLoginUI(goodsManage);
                     }
                 }
-
-            }
         };
         userManage.addActionListener(listener);
         goodsManage.addActionListener(listener);
@@ -407,9 +403,9 @@ public class MainInterface {
         scrollBox = Box.createHorizontalBox();
         scrollBox.add(component);
         bigBox.add(scrollBox);
-        bigBox.updateUI();
-        jf.setVisible(false);
-        jf.setVisible(true);
+        bigBox.revalidate();
+        bigBox.repaint();
+
     }
 
     public static void main(String[] args) throws IOException {

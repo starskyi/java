@@ -5,10 +5,10 @@ import java.awt.*;
 
 public class CommodityTitle extends JLabel {
 
-    Dimension size = new Dimension(380, 80);
+    Dimension size = new Dimension(200, 80);
 
     public CommodityTitle(String text){
-        setFont(new Font(null, Font.BOLD, 20));
+        setFont(new Font(null, Font.BOLD, 15));
         setAlignmentX(10);
         setText("<html>" + text + "</html>");
         setPreferredSize(size);

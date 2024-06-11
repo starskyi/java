@@ -137,7 +137,7 @@ public class CommodityAddUI extends JDialog {
 
                     JOptionPane.showMessageDialog(jf, "添加成功");
                     data.clear();
-                    CreateDataUtil.createData(data, commodityDao.findAll());
+                    CreateDataUtil.createData(data, commodityDao.findAll1());
                     model.fireTableDataChanged();
                 }catch(Exception exception){
                     JOptionPane.showMessageDialog(jf, "不好意思， 您的格式有误");

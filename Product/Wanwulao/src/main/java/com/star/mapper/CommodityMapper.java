@@ -11,16 +11,22 @@ import java.util.List;
 public interface CommodityMapper {
 
     @Select("select * from tb_commodity")
-    List<Commodity> findAll();
+    List<Commodity> findAll1();
+
+    @Select("select * from tb_commodity order by id offset #{offset} rows fetch next 8 rows only")
+    List<Commodity> findAll(int offset);
 
     @Select("select * from tb_commodity where id = #{id}")
     Commodity selectById(int id);
 
 
-    List<Commodity> selectByCount();
+    List<Commodity> selectByCount(int offset);
 
     @Select("select * from tb_commodity where kind = #{kind}")
-    List<Commodity> selectByKind(int kind);
+    List<Commodity> selectAllByKind(@Param("kind")int kind);
+
+    @Select("select * from tb_commodity where kind = #{kind} order by id offset #{offset} rows fetch next 8 rows only")
+    List<Commodity> selectByKind(@Param("kind")int kind, @Param("offset") int offset);
 
     @Select("select * from tb_commodity where kind != 8")
     List<Commodity> findKindNotEight();

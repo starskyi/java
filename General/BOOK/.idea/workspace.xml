@@ -10,34 +10,168 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec09ec0c-cc16-4487-aa59-2aa8503541b7" name="Changes" comment="Changes">
-      <change afterPath="$PROJECT_DIR$/../Demo/Demo1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Mial.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Mial/Mial.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Script/Script1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WebPage/Canvas/.idea/Canvas.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WebPage/Demo/Demo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frame/SSM/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/.idea/libraries/Maven__c3p0_c3p0_0_9_1_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frame/SSM/.idea/libraries/Maven__c3p0_c3p0_0_9_1_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/.idea/libraries/Maven__com_alibaba_druid_1_1_10.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frame/SSM/.idea/libraries/Maven__com_alibaba_druid_1_1_10.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/.idea/libraries/Maven__com_alibaba_druid_1_1_16.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frame/SSM/.idea/libraries/Maven__com_alibaba_druid_1_1_16.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_38.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frame/SSM/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_38.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/.idea/libraries/Maven__org_springframework_spring_aop_5_2_10_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frame/SSM/.idea/libraries/Maven__org_springframework_spring_aop_5_2_10_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/.idea/libraries/Maven__org_springframework_spring_beans_5_2_10_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frame/SSM/.idea/libraries/Maven__org_springframework_spring_beans_5_2_10_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/.idea/libraries/Maven__org_springframework_spring_context_5_2_10_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frame/SSM/.idea/libraries/Maven__org_springframework_spring_context_5_2_10_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/.idea/libraries/Maven__org_springframework_spring_core_5_2_10_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frame/SSM/.idea/libraries/Maven__org_springframework_spring_core_5_2_10_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/.idea/libraries/Maven__org_springframework_spring_expression_5_2_10_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frame/SSM/.idea/libraries/Maven__org_springframework_spring_expression_5_2_10_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/.idea/libraries/Maven__org_springframework_spring_jcl_5_2_10_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frame/SSM/.idea/libraries/Maven__org_springframework_spring_jcl_5_2_10_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frame/SSM/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Product/Wanwulao/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Product/Wanwulao/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Product/Wanwulao/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Product/Wanwulao/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Product/Wanwulao/src/main/java/com/star/ui/MainInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Product/Wanwulao/src/main/java/com/star/ui/MainInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Product/travel/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Product/travel/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Product/travel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Product/travel/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Product/travel/src/main/java/cn/itcast/travel/web/servlet/BaseServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Product/travel/src/main/java/cn/itcast/travel/web/servlet/BaseServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../WebPage/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../WebPage/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../WebPage/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../WebPage/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../WebPage/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../WebPage/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Frame/SpringBoot/springboot_01_quickstar/springboot_01_quickstar.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Frame/SpringBoot/springboot_02_ssm/springboot_02_ssm.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Frame/SpringMVC/.idea/artifacts/springmvc_test_Web_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Frame/SpringMVC/springmvc_test/springmvc_test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Basics/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Basics/.idea/libraries/libs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Basics/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Basics/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Basics/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/.idea/libraries/Maven__c3p0_c3p0_0_9_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/.idea/libraries/Maven__com_alibaba_druid_1_1_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/.idea/libraries/Maven__com_alibaba_druid_1_1_16.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/.idea/libraries/Maven__junit_junit_4_13_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_38.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_47.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/.idea/libraries/Maven__org_mybatis_mybatis_3_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/.idea/libraries/Maven__org_mybatis_mybatis_3_5_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/.idea/libraries/Maven__org_mybatis_mybatis_spring_2_0_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/.idea/libraries/Maven__org_springframework_spring_aop_5_2_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/.idea/libraries/Maven__org_springframework_spring_beans_5_2_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/.idea/libraries/Maven__org_springframework_spring_context_5_2_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/.idea/libraries/Maven__org_springframework_spring_core_5_2_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/.idea/libraries/Maven__org_springframework_spring_expression_5_2_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/.idea/libraries/Maven__org_springframework_spring_jcl_5_2_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/.idea/libraries/Maven__org_springframework_spring_jdbc_5_2_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/.idea/libraries/Maven__org_springframework_spring_jdbc_5_2_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/.idea/libraries/Maven__org_springframework_spring_test_5_2_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/.idea/libraries/Maven__org_springframework_spring_test_5_2_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/.idea/libraries/Maven__org_springframework_spring_tx_5_2_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/.idea/libraries/Maven__org_springframework_spring_tx_5_2_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring01_baseConfig/Spring01.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring01_baseConfig/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring01_baseConfig/src/main/java/com/star/dao/BookDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring01_baseConfig/src/main/java/com/star/dao/impl/BookDaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring01_baseConfig/src/main/java/com/star/demo/Demo1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring01_baseConfig/src/main/java/com/star/service/BookService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring01_baseConfig/src/main/java/com/star/service/impl/BookServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring01_baseConfig/src/main/resources/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring02_beanInstance/Spring02.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring02_beanInstance/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring02_beanInstance/src/main/java/com/star/dao/BookDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring02_beanInstance/src/main/java/com/star/dao/OrderDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring02_beanInstance/src/main/java/com/star/dao/UserDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring02_beanInstance/src/main/java/com/star/dao/impl/BookDaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring02_beanInstance/src/main/java/com/star/dao/impl/OrderDaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring02_beanInstance/src/main/java/com/star/dao/impl/UserDaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring02_beanInstance/src/main/java/com/star/demo/BookDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring02_beanInstance/src/main/java/com/star/demo/OrderDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring02_beanInstance/src/main/java/com/star/demo/UserDaoDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring02_beanInstance/src/main/java/com/star/demo/UserDaoDemo2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring02_beanInstance/src/main/java/com/star/factory/OrderDaoFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring02_beanInstance/src/main/java/com/star/factory/UserDaoFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring02_beanInstance/src/main/java/com/star/factory/UserDaoFactoryBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring02_beanInstance/src/main/resources/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring03_beanLifecycle/Spring03.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring03_beanLifecycle/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring03_beanLifecycle/src/main/java/com/star/dao/BookDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring03_beanLifecycle/src/main/java/com/star/dao/impl/BookDaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring03_beanLifecycle/src/main/java/com/star/demo/Demo1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring03_beanLifecycle/src/main/java/com/star/service/BookService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring03_beanLifecycle/src/main/java/com/star/service/impl/BookServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring03_beanLifecycle/src/main/resources/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring04_dlSet/Spring04_dlSet.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring04_dlSet/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring04_dlSet/src/main/java/com/star/dao/BookDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring04_dlSet/src/main/java/com/star/dao/UserDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring04_dlSet/src/main/java/com/star/dao/impl/BookDaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring04_dlSet/src/main/java/com/star/dao/impl/UserDaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring04_dlSet/src/main/java/com/star/demo/Demo1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring04_dlSet/src/main/java/com/star/service/BookService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring04_dlSet/src/main/java/com/star/service/impl/BookServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring04_dlSet/src/main/resources/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring05_dlCollection/Spring05_dlCollection.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring05_dlCollection/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring05_dlCollection/src/main/java/com/star/dao/BookDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring05_dlCollection/src/main/java/com/star/dao/impl/BookDaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring05_dlCollection/src/main/java/com/star/demo/Demo1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring05_dlCollection/src/main/resources/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring06_datasource/Spring06_datasource.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring06_datasource/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring06_datasource/src/main/java/com/star/dao/BookDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring06_datasource/src/main/java/com/star/dao/impl/BookDaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring06_datasource/src/main/java/com/star/demo/Demo1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring06_datasource/src/main/resources/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring06_datasource/src/main/resources/jdbc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring07_annotation_bean/Spring07_annotation_bean.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring07_annotation_bean/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring07_annotation_bean/src/main/java/com/star/config/SpringConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring07_annotation_bean/src/main/java/com/star/dao/BookDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring07_annotation_bean/src/main/java/com/star/dao/impl/BookDaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring07_annotation_bean/src/main/java/com/star/demo/AppForAnnotation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring07_annotation_bean/src/main/java/com/star/demo/Demo1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring07_annotation_bean/src/main/java/com/star/service/BookService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring07_annotation_bean/src/main/java/com/star/service/impl/BookServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring07_annotation_bean/src/main/resources/applicationContext.xml.back" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring08_annotation_dl/Spring08_annotation_dl.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring08_annotation_dl/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring08_annotation_dl/src/main/java/com/star/config/SpringConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring08_annotation_dl/src/main/java/com/star/dao/BookDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring08_annotation_dl/src/main/java/com/star/dao/impl/BookDaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring08_annotation_dl/src/main/java/com/star/demo/AppForAnnotation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring08_annotation_dl/src/main/java/com/star/demo/Demo1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring08_annotation_dl/src/main/java/com/star/service/BookService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring08_annotation_dl/src/main/java/com/star/service/impl/BookServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring08_annotation_dl/src/main/resources/jdbc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring09_annotation_third_bean_manager/Spring09_annotation_third_bean_manager.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring09_annotation_third_bean_manager/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring09_annotation_third_bean_manager/src/main/java/com/star/config/JdbcConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring09_annotation_third_bean_manager/src/main/java/com/star/config/SpringConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring09_annotation_third_bean_manager/src/main/java/com/star/dao/BookDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring09_annotation_third_bean_manager/src/main/java/com/star/dao/impl/BookDaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring09_annotation_third_bean_manager/src/main/java/com/star/demo/Demo1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Spring09_annotation_third_bean_manager/src/main/resources/jdbc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Sptring10_mybatis/Sptring10_mybatis.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Sptring10_mybatis/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Sptring10_mybatis/src/main/java/com/star/config/JdbcConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Sptring10_mybatis/src/main/java/com/star/config/MybatisConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Sptring10_mybatis/src/main/java/com/star/config/SpringConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Sptring10_mybatis/src/main/java/com/star/dao/UserDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Sptring10_mybatis/src/main/java/com/star/domain/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Sptring10_mybatis/src/main/java/com/star/main/App1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Sptring10_mybatis/src/main/java/com/star/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Sptring10_mybatis/src/main/java/com/star/service/impl/UserServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Sptring10_mybatis/src/main/resources/db.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Sptring10_mybatis/src/test/java/com/star/service/UserServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Sptring11_aop/Sptring11_aop.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Sptring11_aop/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Sptring11_aop/src/main/java/com/star/aop/MyAdvice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Sptring11_aop/src/main/java/com/star/config/SpringConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Sptring11_aop/src/main/java/com/star/dao/UserDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Sptring11_aop/src/main/java/com/star/dao/impl/UserDaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Sptring11_aop/src/main/java/com/star/main/App1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Sptring12_transfer.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Sptring12_transfer/Sptring12_transfer.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Sptring12_transfer/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Sptring12_transfer/src/main/java/com/star/config/JdbcConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Sptring12_transfer/src/main/java/com/star/config/MybatisConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Sptring12_transfer/src/main/java/com/star/config/SpringConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Sptring12_transfer/src/main/java/com/star/dao/AccountDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Sptring12_transfer/src/main/java/com/star/dao/LogDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Sptring12_transfer/src/main/java/com/star/domain/Account.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Sptring12_transfer/src/main/java/com/star/service/AccountService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Sptring12_transfer/src/main/java/com/star/service/LogService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Sptring12_transfer/src/main/java/com/star/service/impl/AccountServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Sptring12_transfer/src/main/java/com/star/service/impl/LogServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Sptring12_transfer/src/main/resources/db.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SSM/Sptring12_transfer/src/test/java/com/star/service/AccountServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SpringMVC/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frame/SpringMVC/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SpringMVC/springmvc_05_ssm/springmvc_05_ssm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frame/SpringMVC/springmvc_05_ssm/springmvc_05_ssm.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frame/SpringMVC/springmvc_06_interception/springmvc_06_interception.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frame/SpringMVC/springmvc_06_interception/springmvc_06_interception.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +221,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Mail" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.33678162" />
@@ -295,6 +429,8 @@
       <workItem from="1701925689210" duration="19000" />
       <workItem from="1702107661207" duration="158000" />
       <workItem from="1702110752127" duration="484000" />
+      <workItem from="1710217142447" duration="2690000" />
+      <workItem from="1710222217505" duration="192000" />
     </task>
     <servers />
   </component>

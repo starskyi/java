@@ -60,30 +60,30 @@ public class ClassifyUI extends Box {
                 //展示对应页面
                 if(component == phone){
                     //手机
-                    update(1);
+                    update(1, 0);
 
                 }else if(component == computer){
                     //电脑
-                    update(2);
+                    update(2, 0);
 
                 }else if(component == maleWear){
                     //男装
-                    update(3);
+                    update(3, 0);
 
                 }else if(component == femaleWear){
                     //女装
-                    update(4);
+                    update(4, 0);
 
                 }else if(component == food){
                     //美食
-                    update(5);
+                    update(5, 0);
 
                 }else if(component == book){
                     //书籍
-                    update(6);
+                    update(6, 0);
                 }else{
                     //家用
-                    update(8);
+                    update(8, 0);
                 }
             }
             @Override
@@ -130,19 +130,19 @@ public class ClassifyUI extends Box {
         menu.add(other);
         add(menu);
 
-        homeUI = new HomeUI(goods);
+        homeUI = new HomeUI(goods, 1);
         add(homeUI);
 
     }
 
 
-    public void update(int kind){
+    public void update(int kind, int offset){
         remove(homeUI);
-        goods = commodityDao.selectByKind(kind);
-        homeUI = new HomeUI(goods);
+        goods = commodityDao.selectByKind(kind, offset);
+        homeUI = new HomeUI(goods, kind);
         add(homeUI);
-        updateUI();
-        jf.setVisible(false);
-        jf.setVisible(true);
+        revalidate();
+        repaint();
+
     }
 }

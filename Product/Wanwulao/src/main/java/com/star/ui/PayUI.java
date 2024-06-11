@@ -21,17 +21,17 @@ public class PayUI extends JDialog {
     public PayUI(Record record1){
         this.record = record1;
 
-        setLocation((ScreenUtil.getScreenWidth() - 800)/2, (ScreenUtil.getScreenHeight() - 1200)/2);
+        setLocation((ScreenUtil.getScreenWidth() - 550)/2, (ScreenUtil.getScreenHeight() - 800)/2);
         JPanel panel = new JPanel();
-        panel.setPreferredSize(new Dimension(800, 1200));
+        panel.setPreferredSize(new Dimension(550, 800));
         JLabel title = new JLabel("请扫码支付或使用余额支付");
-        title.setFont(new Font(null, Font.BOLD, 40));
+        title.setFont(new Font(null, Font.BOLD, 20));
 
         panel.add(title);
         panel.add(new PayImage());
 
         JButton btn = new JButton("余额支付");
-        btn.setFont(new Font(null, Font.BOLD, 30));
+        btn.setFont(new Font(null, Font.BOLD, 20));
         btn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -51,10 +51,10 @@ public class PayUI extends JDialog {
                 }
             }
         });
-        System.out.println("aaa");
-        JPanel p = new JPanel();
-        p.setPreferredSize(new Dimension(700, 30));
-        panel.add(p);
+//        System.out.println("aaa");
+//        JPanel p = new JPanel();
+//        p.setPreferredSize(new Dimension(700, 30));
+//        panel.add(p);
         panel.add(btn);
         add(panel);
         pack();

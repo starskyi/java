@@ -39,7 +39,7 @@ public class MyUI extends Box {
 
         Box menu = Box.createHorizontalBox();
 
-        menu.setPreferredSize(new Dimension(2000, 100));
+        menu.setPreferredSize(new Dimension(1000, 100));
 
         selected = all;
 
@@ -62,7 +62,7 @@ public class MyUI extends Box {
                     //所有
                     recordPanel.removeAll();
                     records = recordDao.selectByUid(user.getId());
-                    recordPanel.setPreferredSize(new Dimension(2200, (records.size() + 1) * 320));
+                    recordPanel.setPreferredSize(new Dimension(1200, (records.size() + 1) * 320));
                     addRecordToPanel(records);
                     recordPanel.updateUI();
 
@@ -115,19 +115,22 @@ public class MyUI extends Box {
         add(menu);
 
         records = recordDao.selectByUid(user.getId());
+        System.out.println(records);
         recordPanel = new JPanel();
-        recordPanel.setPreferredSize(new Dimension(2200, (records.size() + 1) * 320));
+        recordPanel.setPreferredSize(new Dimension(1200, (records.size() + 1) * 320));
         addRecordToPanel(records);
 
         scrollPane = new JScrollPane(recordPanel, JScrollPane.VERTICAL_SCROLLBAR_ALWAYS, JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
-        scrollPane.setPreferredSize(new Dimension(2000, 2000));
+        scrollPane.setPreferredSize(new Dimension(1200, 800));
+        JScrollBar verticalScrollBar = scrollPane.getVerticalScrollBar();
+        verticalScrollBar.setUnitIncrement(30);
         add(scrollPane);
     }
 
     public void updateUI(int uid, int status){
         recordPanel.removeAll();
         records = recordDao.selectByStatus(uid, status);
-        recordPanel.setPreferredSize(new Dimension(2200, (records.size() + 1) * 320));
+        recordPanel.setPreferredSize(new Dimension(1200, (records.size() + 1) * 320));
         addRecordToPanel(records);
         recordPanel.updateUI();
     }

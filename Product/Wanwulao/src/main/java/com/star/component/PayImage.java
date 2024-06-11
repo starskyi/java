@@ -10,7 +10,7 @@ public class PayImage extends JPanel {
     BufferedImage image;
 
     public PayImage(){
-        setPreferredSize(new Dimension(710, 970));
+        setPreferredSize(new Dimension(500, 690));
         try {
             this.image = ImageIoUtil.read("img/QR.jpg");
         } catch (Exception e) {

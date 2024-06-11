@@ -3,6 +3,8 @@ package com.star.component;
 import com.star.dao.RecordDao;
 import com.star.domain.Commodity;
 import com.star.domain.Record;
+import com.star.ui.LoginUI;
+import com.star.ui.MainInterface;
 import com.star.ui.PayUI;
 import com.star.utils.ImageIoUtil;
 
@@ -17,7 +19,7 @@ import static com.star.ui.MainInterface.user;
 public class CommodityPanel extends JPanel {
     BufferedImage image;
 
-    Dimension size = new Dimension(700, 400);
+    Dimension size = new Dimension(500, 300);
 
     RecordDao recordDao = new RecordDao();
 
@@ -65,6 +67,8 @@ public class CommodityPanel extends JPanel {
                     Record record = new Record(null, user.getId(), commodity.getId(), 1, commodity.getPrice());
                     recordDao.add(record);
                     new PayUI(record);
+                }else{
+                    new LoginUI();
                 }
 
             }

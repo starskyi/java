@@ -1,7 +1,9 @@
 package com.star.ui;
 
 import com.star.dao.AdminDao;
+import com.star.dao.UserDao;
 import com.star.domain.Admin;
+import com.star.domain.User;
 import com.star.utils.ScreenUtil;
 
 import javax.swing.*;
@@ -18,7 +20,7 @@ public class AdminLoginUI extends JDialog {
     int width = 600;
     int height = 400;
 
-
+    JLabel title = new JLabel("管理员账号");
     JTextField username;
     JPasswordField password;
     AdminDao adminDao = new AdminDao();
@@ -53,6 +55,7 @@ public class AdminLoginUI extends JDialog {
         login.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+
                 if(adminDao.selectAdmin(new Admin(null, username.getText(),
                         new String(password.getPassword()))) != null){
                     //管理员登录成功
@@ -62,21 +65,36 @@ public class AdminLoginUI extends JDialog {
                     }else{
                         new CommodityManagerUI();
                     }
-
                 }else{
                     //管理员登录失败
-                    JOptionPane.showMessageDialog(jf, "该账号权限不够，请联系江哥给你个管理员账号");
+                    User user = new UserDao().findUser(username.getText(), new String(password.getPassword()));
+                    if(user != null){
+                        JOptionPane.showMessageDialog(jf, "该账号权限不够，请联系江哥给你个管理员账号");
+                    }else{
+                        JOptionPane.showMessageDialog(jf, "密码或账号错误");
+                    }
+
                 }
             }
         });
+
         JButton cancel = new JButton("取消");
         login.setFont(new Font(null, Font.BOLD, 20));
         cancel.setFont(new Font(null, Font.BOLD, 20));
         btnBox.add(login);
         btnBox.add(Box.createHorizontalStrut(80));
         btnBox.add(cancel);
+        cancel.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                setVisible(false);
+            }
+        });
 
         Box vBox = Box.createVerticalBox();
+        vBox.add(Box.createVerticalStrut(30));
+        title.setFont(new Font(null, Font.BOLD, 20));
+        vBox.add(title);
         vBox.add(Box.createVerticalStrut(30));
         vBox.add(uBox);
         vBox.add(Box.createVerticalStrut(30));

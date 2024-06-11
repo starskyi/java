@@ -6,7 +6,7 @@
 <mapper namespace="com.star.mapper.CommodityMapper">
 
     <select id="selectByCount" resultType="com.star.domain.Commodity">
-        select * from tb_Commodity order by count desc
+        select * from tb_Commodity order by count desc offset #{offset} rows fetch next 8 rows only
     </select>
 
     <insert id="add">

@@ -15,7 +15,7 @@ import java.awt.event.ActionListener;
 import java.awt.image.BufferedImage;
 
 public class BuyPanel extends Box {
-    Dimension size = new Dimension(2200, 300);
+    Dimension size = new Dimension(1200, 300);
 
     Commodity commodity;
     User user;
@@ -69,16 +69,16 @@ public class BuyPanel extends Box {
                 judge();
             }
         });
-        statusBtn.setFont(new Font(null, Font.BOLD, 20));
+        statusBtn.setFont(new Font(null, Font.BOLD, 15));
         vBox.add(statusBtn);
         judge();
 
         add(image);
-        add(Box.createHorizontalStrut(30));
+        add(Box.createHorizontalStrut(10));
         add(title);
-        add(Box.createHorizontalStrut(40));
+        add(Box.createHorizontalStrut(10));
         add(address);
-        add(Box.createHorizontalStrut(40));
+        add(Box.createHorizontalStrut(10));
         add(vBox);
         setOpaque(true);
         setBackground(new Color(75, 207, 250));

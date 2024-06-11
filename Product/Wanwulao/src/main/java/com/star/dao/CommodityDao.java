@@ -2,6 +2,7 @@ package com.star.dao;
 
 import com.star.domain.Commodity;
 import com.star.mapper.CommodityMapper;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,11 +18,20 @@ public class CommodityDao {
      * 查询所有商品
      * @return 所有商品
      */
-    public List<Commodity> findAll(){
+    public List<Commodity> findAll(int offset){
         List<Commodity> list = new ArrayList<Commodity>();
         try{
-            list.addAll(mapper.selectByKind(8));
-            list.addAll(mapper.findKindNotEight());
+            list.addAll(mapper.findAll(offset));
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+        return list;
+    }
+
+    public List<Commodity> findAll1(){
+        List<Commodity> list = new ArrayList<Commodity>();
+        try{
+            list.addAll(mapper.findAll1());
         }catch(Exception e){
             e.printStackTrace();
         }
@@ -41,10 +51,10 @@ public class CommodityDao {
      * 根据销量获取商品
      * @return 排序后的商品
      */
-    public List<Commodity> selectByCount(){
+    public List<Commodity> selectByCount(int offset){
         List<Commodity> list = new ArrayList<Commodity>();
         try{
-            list.addAll(mapper.selectByCount());
+            list.addAll(mapper.selectByCount(offset));
         }catch(Exception e){
             e.printStackTrace();
         }
@@ -52,15 +62,25 @@ public class CommodityDao {
     }
 
 
+    public List<Commodity> selectAllByKind(int kind){
+        List<Commodity> list = new ArrayList<Commodity>();
+        try{
+            list.addAll(mapper.selectAllByKind(kind));
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+        return list;
+    }
+
     /**
      * 根据种类查询数据
      * @param kind 种类
      * @return 指定种类商品
      */
-    public List<Commodity> selectByKind(int kind){
+    public List<Commodity> selectByKind(int kind, int offset){
         List<Commodity> list = new ArrayList<Commodity>();
         try{
-            list.addAll(mapper.selectByKind(kind));
+            list.addAll(mapper.selectByKind(kind, offset));
         }catch(Exception e){
             e.printStackTrace();
         }
