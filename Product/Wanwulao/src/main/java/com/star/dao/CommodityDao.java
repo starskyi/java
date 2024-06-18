@@ -118,4 +118,13 @@ public class CommodityDao {
         }
         return list;
     }
+    public List<Commodity> selectByTitle1(int offset, String title){
+        List<Commodity> list = new ArrayList<Commodity>();
+        try{
+            list.addAll(mapper.selectByTitle1(offset, title));
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+        return list;
+    }
 }

@@ -10,7 +10,7 @@
 <!--    </select>-->
     <insert id="add">
         insert into tb_user
-        values(#{username}, #{password}, #{name}, #{telephone}, #{isMerchant}, #{sex}, #{address}, 0.0);
+        values(#{username}, #{password}, #{name}, #{telephone}, #{isMerchant}, #{sex}, #{address}, 100.0);
     </insert>
 
     <update id="update" useGeneratedKeys="true" keyProperty="id">

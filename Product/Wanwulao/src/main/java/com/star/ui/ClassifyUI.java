@@ -130,7 +130,7 @@ public class ClassifyUI extends Box {
         menu.add(other);
         add(menu);
 
-        homeUI = new HomeUI(goods, 1);
+        homeUI = new HomeUI(goods, 1, "");
         add(homeUI);
 
     }
@@ -139,7 +139,7 @@ public class ClassifyUI extends Box {
     public void update(int kind, int offset){
         remove(homeUI);
         goods = commodityDao.selectByKind(kind, offset);
-        homeUI = new HomeUI(goods, kind);
+        homeUI = new HomeUI(goods, kind, "");
         add(homeUI);
         revalidate();
         repaint();

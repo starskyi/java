@@ -59,14 +59,14 @@ public class CommodityPanel extends JPanel {
 
         JPanel payPanel = new JPanel();
 
-        JButton payBtn = new JButton("购买");
+        final JButton payBtn = new JButton("购买");
         payBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 if(user != null){
                     Record record = new Record(null, user.getId(), commodity.getId(), 1, commodity.getPrice());
                     recordDao.add(record);
-                    new PayUI(record);
+                    new PayUI(record, payBtn);
                 }else{
                     new LoginUI();
                 }

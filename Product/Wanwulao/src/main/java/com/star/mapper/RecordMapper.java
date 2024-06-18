@@ -13,7 +13,7 @@ public interface RecordMapper {
     public List<Record> selectByUid(int uid);
 
     @Update("update tb_record set status = #{status} where id = #{id}")
-    public  void updateStatus(Record record);
+    public  int updateStatus(Record record);
 
     @Select("select * from tb_record where uid = #{uid} and status = #{status}")
     public List<Record> selectByStatus(@Param("uid")int uid, @Param("status")int status );

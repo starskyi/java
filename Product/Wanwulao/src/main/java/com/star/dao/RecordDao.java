@@ -1,7 +1,10 @@
 package com.star.dao;
 
+import com.star.domain.Commodity;
 import com.star.domain.Record;
 import com.star.mapper.RecordMapper;
+
+import java.util.ArrayList;
 import java.util.List;
 
 import static com.star.ui.MainInterface.sqlSession;
@@ -16,15 +19,21 @@ public class RecordDao {
      * @return 当前用户所用记录
      */
     public List<Record> selectByUid(int uid){
-        return mapper.selectByUid(uid);
+        List<Record> list = new ArrayList<Record>();
+        try{
+            list.addAll(mapper.selectByUid(uid));
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+        return list;
     }
 
     /**
      * 更新支付状态
      * @param record 当前购买记录
      */
-    public void updateStatus(Record record){
-        mapper.updateStatus(record);
+    public int updateStatus(Record record){
+        return mapper.updateStatus(record);
     }
 
     /**
@@ -43,10 +52,7 @@ public class RecordDao {
      * @return true | false
      */
     public boolean add(Record record){
-
         int flag = mapper.add(record);
-        record.setId(flag);
-
         return flag == 1;
     }
 

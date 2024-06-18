@@ -17,7 +17,7 @@ public class HomeUI extends Box {
     CommodityDao commodityDao = new CommodityDao();
     static int kind = 0;
 
-    public HomeUI(@NotNull final List<Commodity> goods, int kind) {
+    public HomeUI(@NotNull final List<Commodity> goods, int kind, final String text) {
         super(BoxLayout.X_AXIS);
         HomeUI.kind = kind;
         final JPanel panel = new JPanel();
@@ -38,11 +38,16 @@ public class HomeUI extends Box {
                 if(value + visibleAmount +  300 >= maxValue){
                     List<Commodity> newGoods = null;
                     if( HomeUI.kind == 0){
-                        if(commodityDao.findAll1().size() == goods.size()){
+                        if(commodityDao.findAll1().size() == goods.size()
+                                || (!text.equals("") && commodityDao.selectByTitle(text).size() == goods.size())){
                             return;
                         }
+                        if(!text.equals("")){
+                            newGoods = commodityDao.selectByTitle1(goods.size(), text);
+                        }else{
+                            newGoods = commodityDao.findAll(goods.size());
+                        }
 
-                        newGoods = commodityDao.findAll(goods.size());
                     }else{
                         if(commodityDao.selectAllByKind(HomeUI.kind).size() == goods.size()){
                             return;

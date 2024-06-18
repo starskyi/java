@@ -10,6 +10,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 
 import static com.star.ui.MainInterface.jf;
 
@@ -21,12 +23,15 @@ public class RegisterUI extends JDialog {
     int height = 800;
 
 
-    JTextField usernameF;
-    JPasswordField passwordF;
-    JTextField name;
-    JTextField phone;
-    JTextField address;
-    JTextField sex;
+    JTextField usernameF = new MyTextField(20);;
+    JPasswordField passwordF = new JPasswordField(20);
+    JTextField name = new MyTextField(20);
+    JTextField phone = new MyTextField(20);
+    JTextField address = new MyTextField(20);
+    JTextField sex = new MyTextField(20);
+
+    JTextField[] fields = {usernameF, passwordF, name, phone, address, sex};
+
 
     UserDao userDao = new UserDao();
 
@@ -36,7 +41,6 @@ public class RegisterUI extends JDialog {
         Box uBox = Box.createHorizontalBox();
         uBox.setPreferredSize(new Dimension(400, 40));
         JLabel uLabel = new MyLabel("账号：");
-        usernameF = new MyTextField(20);
         uBox.add(uLabel);
         uBox.add(Box.createHorizontalStrut(30));
         uBox.add(usernameF);
@@ -44,7 +48,6 @@ public class RegisterUI extends JDialog {
         Box pBox = Box.createHorizontalBox();
         pBox.setPreferredSize(new Dimension(400, 40));
         JLabel pLabel = new MyLabel("密码：");
-        passwordF = new JPasswordField(20);
         passwordF.setFont(new Font(null, Font.BOLD, 20));
         pBox.add(pLabel);
         pBox.add(Box.createHorizontalStrut(30));
@@ -52,35 +55,31 @@ public class RegisterUI extends JDialog {
 
         Box nBox = Box.createHorizontalBox();
         JLabel nLabel = new MyLabel("姓名：");
-        name = new MyTextField(20);
         nBox.add(nLabel);
         nBox.add(Box.createHorizontalStrut(30));
         nBox.add(name);
 
         Box sexBox = Box.createHorizontalBox();
         JLabel sexL = new MyLabel("性别：");
-        sex = new MyTextField(20);
         sexBox.add(sexL);
         sexBox.add(Box.createHorizontalStrut(30));
         sexBox.add(sex);
 
         Box phoneBox = Box.createHorizontalBox();
         JLabel phoneL = new MyLabel("电话：");
-        phone = new MyTextField(20);
         phoneBox.add(phoneL);
         phoneBox.add(Box.createHorizontalStrut(30));
         phoneBox.add(phone);
 
         Box addressBox = Box.createHorizontalBox();
         JLabel addressL = new MyLabel("地址：");
-        address = new MyTextField(20);
         addressBox.add(addressL);
         addressBox.add(Box.createHorizontalStrut(30));
         addressBox.add(address);
 
         Box btnBox = Box.createHorizontalBox();
         btnBox.setPreferredSize(new Dimension(400, 50));
-        JButton register = new JButton("注册");
+        final JButton register = new JButton("注册");
         register.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -104,6 +103,17 @@ public class RegisterUI extends JDialog {
                 }
             }
         });
+        KeyAdapter keyAdapter = new KeyAdapter() {
+            @Override
+            public void keyTyped(KeyEvent e) {
+                if((int)e.getKeyChar() == 10) register.doClick();
+            }
+        };
+
+        for (JTextField field : fields) {
+            field.addKeyListener(keyAdapter);
+        }
+
         register.setFont(new Font(null, Font.BOLD, 30));
         btnBox.add(register);
 

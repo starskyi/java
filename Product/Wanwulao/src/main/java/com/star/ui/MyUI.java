@@ -115,7 +115,7 @@ public class MyUI extends Box {
         add(menu);
 
         records = recordDao.selectByUid(user.getId());
-        System.out.println(records);
+
         recordPanel = new JPanel();
         recordPanel.setPreferredSize(new Dimension(1200, (records.size() + 1) * 320));
         addRecordToPanel(records);

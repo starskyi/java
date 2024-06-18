@@ -61,7 +61,7 @@ public class BuyPanel extends Box {
 
                 String cmd = e.getActionCommand();
                 if(cmd.equals("立即支付")){
-                    new PayUI(record);
+                    new PayUI(record, statusBtn);
                 }else{
                     record.setStatus(3);
                     recordDao.updateStatus(record);

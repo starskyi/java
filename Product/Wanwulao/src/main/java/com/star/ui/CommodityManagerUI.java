@@ -66,7 +66,7 @@ public class CommodityManagerUI extends JDialog{
                 model.fireTableDataChanged();
             }
         };
-        List<Commodity> goods = commodityDao.findAll(0);
+        List<Commodity> goods = commodityDao.findAll1();
         CreateDataUtil.createData(data, goods);
         String[] ts = {"编号", "图片", "描述", "商家", "价格", "库存"};
 

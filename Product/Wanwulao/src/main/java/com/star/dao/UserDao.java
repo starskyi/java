@@ -52,6 +52,8 @@ public class UserDao {
 
             record.setStatus(2);
             recordDao.updateStatus(record);
+
+
             commodityDao.updateCount(commodityDao.selectById(record.getCid()).getCount() + 1, record.getCid());
 
             return true;

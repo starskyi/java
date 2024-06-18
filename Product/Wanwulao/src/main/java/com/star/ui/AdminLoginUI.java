@@ -10,6 +10,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 
 import static com.star.ui.MainInterface.jf;
 
@@ -51,7 +53,7 @@ public class AdminLoginUI extends JDialog {
 
         Box btnBox = Box.createHorizontalBox();
         btnBox.setPreferredSize(new Dimension(400, 50));
-        JButton login = new JButton("登录");
+        final JButton login = new JButton("登录");
         login.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -77,6 +79,16 @@ public class AdminLoginUI extends JDialog {
                 }
             }
         });
+
+        KeyAdapter keyAdapter = new KeyAdapter() {
+            @Override
+            public void keyTyped(KeyEvent e) {
+                if((int)e.getKeyChar() == 10) login.doClick();
+            }
+        };
+
+        username.addKeyListener(keyAdapter);
+        password.addKeyListener(keyAdapter);
 
         JButton cancel = new JButton("取消");
         login.setFont(new Font(null, Font.BOLD, 20));

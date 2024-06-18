@@ -10,6 +10,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.text.DecimalFormat;
 
 import static com.star.ui.MainInterface.*;
 
@@ -18,7 +19,7 @@ public class PayUI extends JDialog {
     Record record;
     UserDao userDao = new UserDao();
     CommodityDao commodityDao = new CommodityDao();
-    public PayUI(Record record1){
+    public PayUI(Record record1, final JButton statusBtn){
         this.record = record1;
 
         setLocation((ScreenUtil.getScreenWidth() - 550)/2, (ScreenUtil.getScreenHeight() - 800)/2);
@@ -42,8 +43,14 @@ public class PayUI extends JDialog {
 
                     JOptionPane.showMessageDialog(jf, "支付成功");
                     user = new UserDao().selectById(user.getId());
-                    username.setText("用户：" + user.getName());
-                    money.setText("余额：" + user.getMoney());
+                    username.setText("用户：" + user.getUsername());
+                    DecimalFormat df = new DecimalFormat("# 0.00");
+                    money.setText("余额：" + df.format(user.getMoney()));
+                    if(statusBtn.getText().equals("立即支付")){
+                        statusBtn.setText("待收货");
+                        statusBtn.revalidate();
+                        statusBtn.repaint();
+                    }
 
                 }else{
                     //支付失败
@@ -51,10 +58,7 @@ public class PayUI extends JDialog {
                 }
             }
         });
-//        System.out.println("aaa");
-//        JPanel p = new JPanel();
-//        p.setPreferredSize(new Dimension(700, 30));
-//        panel.add(p);
+
         panel.add(btn);
         add(panel);
         pack();

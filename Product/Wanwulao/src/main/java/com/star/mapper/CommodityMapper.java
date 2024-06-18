@@ -41,4 +41,7 @@ public interface CommodityMapper {
 
     @Select("select * from tb_commodity where title like #{title}")
     List<Commodity> selectByTitle(String title);
+
+    @Select("select * from tb_commodity where title like #{title} order by id offset #{offset} rows fetch next 8 rows only")
+    List<Commodity> selectByTitle1(@Param("offset") int offset, @Param("title") String title);
 }

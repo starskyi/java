@@ -7,6 +7,9 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
+import java.text.DecimalFormat;
 
 import static com.star.ui.MainInterface.jf;
 
@@ -55,7 +58,7 @@ public class LoginUI extends JDialog{
         password.setBounds(330,230,280,40);
         add(password);
 
-        JButton jbt=new JButton("登录");
+        final JButton jbt=new JButton("登录");
         jbt.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -68,10 +71,19 @@ public class LoginUI extends JDialog{
                     JOptionPane.showMessageDialog(jf, "登录成功");
                     MainInterface.user = user;
                     MainInterface.username.setText("用户： " + username.getText());
-                    MainInterface.money.setText("余额： " + user.getMoney() + "");
+                    DecimalFormat df = new DecimalFormat("# 0.00");
+                    MainInterface.money.setText("余额： " + df.format(user.getMoney()) + "");
                 }
             }
         });
+        KeyAdapter keyAdapter = new KeyAdapter() {
+            @Override
+            public void keyTyped(KeyEvent e) {
+                if((int)e.getKeyChar() == 10) jbt.doClick();
+            }
+        };
+        username.addKeyListener(keyAdapter);
+        password.addKeyListener(keyAdapter);
         jbt.setForeground(new Color(0x023BF6));
         jbt.setBackground(new Color(0x38FF00));
         jbt.setFont(new Font("楷体",Font.PLAIN,20));

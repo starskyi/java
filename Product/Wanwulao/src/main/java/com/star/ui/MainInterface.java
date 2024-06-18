@@ -97,14 +97,24 @@ public class MainInterface {
 
         input = new JTextField(20);
 
-
         searchBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                HomeUI homeUi = new HomeUI(commodityDao.selectByTitle("%" + input.getText() + "%"), 0);
+                String text = "%" + input.getText() + "%";
+                HomeUI homeUi = new HomeUI(commodityDao.selectByTitle1(0, text), 0, text);
                 updateUI(homeUi);
             }
         });
+        input.addKeyListener(new KeyAdapter() {
+            @Override
+            public void keyTyped(KeyEvent e) {
+                int code = e.getKeyChar();
+                if(code == 10){
+                    searchBtn.doClick();
+                }
+            }
+        });
+
         searchBtn.setFont(new Font(null, Font.BOLD, 20));
         input.setFont(new Font(null, Font.BOLD, 30));
         input.setForeground(Color.GRAY);
@@ -211,16 +221,15 @@ public class MainInterface {
                 Component component = e.getComponent();
                 JLabel label = (JLabel) e.getComponent();
 
-
                 //展示对应页面
                 if(component == home){
                     //首页
-                    HomeUI homeUi = new HomeUI(commodityDao.findAll(0), 0);
+                    HomeUI homeUi = new HomeUI(commodityDao.findAll(0), 0, "");
                     updateUI(homeUi);
 
                 }else if(component == recommend){
                     //推荐
-                    HomeUI recommendUi = new HomeUI(commodityDao.selectByCount(0), 0);
+                    HomeUI recommendUi = new HomeUI(commodityDao.selectByCount(0), 0, "");
                     updateUI(recommendUi);
 
                 }else if(component == classify){
@@ -312,7 +321,7 @@ public class MainInterface {
 
 
         scrollBox = Box.createHorizontalBox();
-        scrollBox.add(new HomeUI(commodityDao.findAll(0), 0));
+        scrollBox.add(new HomeUI(commodityDao.findAll(0), 0, ""));
 
 
         bigBox = Box.createVerticalBox();
