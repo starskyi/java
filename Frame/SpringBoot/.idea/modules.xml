@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/springboot_01_quickstar/springboot_01_quickstar.iml" filepath="$PROJECT_DIR$/springboot_01_quickstar/springboot_01_quickstar.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot_02_ssm/springboot_02_ssm.iml" filepath="$PROJECT_DIR$/springboot_02_ssm/springboot_02_ssm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot_03_configFile/springboot_03_configFile.iml" filepath="$PROJECT_DIR$/springboot_03_configFile/springboot_03_configFile.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot_04_register/springboot_04_register.iml" filepath="$PROJECT_DIR$/springboot_04_register/springboot_04_register.iml" />
     </modules>
   </component>
 </project>

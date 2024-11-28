@@ -1,14 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/springboot_01_quickstar/pom.xml" />
         <option value="$PROJECT_DIR$/springboot_02_ssm/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_03_configFile/springboot_03_configFile/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_04_register/springboot_04_register/pom.xml" />
+        <option value="$PROJECT_DIR$/dmybatis-spring-boot-autoconfigure/dmybatis-spring-boot-autoconfigure/pom.xml" />
+        <option value="$PROJECT_DIR$/dmybatis-spring-boot-autoconfigure/dmybatis-spring-boot-starter/dmybatis-spring-boot-starter/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_mybatis/springboot_mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_03_configFile/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_04_register/pom.xml" />
+        <option value="$PROJECT_DIR$/dmybatis-spring-boot-autoconfigure/pom.xml" />
+        <option value="$PROJECT_DIR$/dmybatis-spring-boot-starter/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/../../Product/big-event/pom.xml" />
       </list>
     </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/../../Product/big-event/pom.xml" />
+      </set>
+    </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="17" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

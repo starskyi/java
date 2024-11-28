@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Demo2 {
     public static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) throws InterruptedException {
-
+        createArr();
         //int[] arr = createArr();
         int[] arr = createArr2();
         //printArr(arr);

@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Spring01_baseConfig/Spring01.iml" filepath="$PROJECT_DIR$/Spring01_baseConfig/Spring01.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring01_baseConfig/Spring01_baseConfig.iml" filepath="$PROJECT_DIR$/Spring01_baseConfig/Spring01_baseConfig.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Spring02_beanInstance/Spring02.iml" filepath="$PROJECT_DIR$/Spring02_beanInstance/Spring02.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring02_beanInstance/Spring02_beanInstance.iml" filepath="$PROJECT_DIR$/Spring02_beanInstance/Spring02_beanInstance.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Spring03_beanLifecycle/Spring03.iml" filepath="$PROJECT_DIR$/Spring03_beanLifecycle/Spring03.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring03_beanLifecycle/Spring03_beanLifecycle.iml" filepath="$PROJECT_DIR$/Spring03_beanLifecycle/Spring03_beanLifecycle.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring04_dlSet/Spring04_dlSet.iml" filepath="$PROJECT_DIR$/Spring04_dlSet/Spring04_dlSet.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring05_dlCollection/Spring05_dlCollection.iml" filepath="$PROJECT_DIR$/Spring05_dlCollection/Spring05_dlCollection.iml" />

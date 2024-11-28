@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.star</groupId>
-    <artifactId>Spring02</artifactId>
+    <artifactId>Spring02_beanInstance</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <dependencies>
